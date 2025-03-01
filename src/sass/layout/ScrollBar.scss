@@ -1,0 +1,24 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+/* Cache les boutons de défilement en ajustant la largeur */
+::-webkit-scrollbar {
+  width: 15px; /* Largeur de la barre de défilement */
+}
+
+/* Applique les styles de base à la piste de la barre de défilement */
+::-webkit-scrollbar-track {
+  // background: #f1f1f1; /* Couleur de fond de la piste */
+  background: $primary_color;
+}
+
+/* Personnalise le pouce de la barre de défilement */
+::-webkit-scrollbar-thumb {
+  background: $fourth_color; /* Couleur du pouce */
+}
+
+/* Personnalise le pouce au survol */
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary100_color;
+  cursor: pointer;
+}

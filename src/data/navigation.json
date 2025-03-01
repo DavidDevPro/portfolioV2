@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Accueil",
+    "link": "/"
+  },
+  {
+    "label": "A propos",
+    "link": "/about"
+  },
+  {
+    "label": "Projets",
+    "link": "/project"
+  },
+  {
+    "label": "Contact",
+    "link": "/contact"
+  }
+]

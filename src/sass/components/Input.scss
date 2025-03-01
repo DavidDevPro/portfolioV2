@@ -1,0 +1,21 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+input {
+  @include shadow_button;
+  background-color: $primary200_color;
+  color: $secondary100_color;
+  height: 60px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border: 2px solid $fourth_color;
+  border-radius: 15px;
+  font-size: 1.2em;
+  outline: none;
+  opacity: 0.96;
+
+  &::placeholder {
+    font-size: 0.85em;
+    color: $secondary100_color;
+  }
+}

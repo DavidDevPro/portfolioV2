@@ -1,0 +1,149 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.filter {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+
+  &_items {
+    @include shadow_button;
+    display: inline-block;
+    margin: 0 auto 20px;
+    border-radius: 30px;
+    border: 1px dashed $fourth_color;
+    padding: 4px 4px 0px;
+    transition: display 300ms ease-out, flex-direction 300ms ease-out,
+      padding 300ms ease-out, border 300ms ease-out;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border: 1px solid $primary_color;
+    }
+    li {
+      display: inline-block;
+      position: relative;
+      color: $fourth_color;
+      font-size: 1.15em;
+      text-transform: uppercase;
+      padding: 11px 23px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: font-size 300ms ease-out, padding 300ms ease;
+      @media screen and (max-width: 768px) {
+        font-size: 1.05em;
+        padding: 9px 20px;
+      }
+
+      &.active {
+        background-color: $primary_color;
+        color: $secondary100_color;
+        font-weight: 600;
+        border-radius: 25px;
+        opacity: 0.96;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.55);
+        @media screen and (max-width: 768px) {
+          border: 2px solid $fourth_color;
+        }
+      }
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 30px;
+    margin-top: 30px;
+    transition: grid-template-columns repeat 300ms ease-out;
+    @media screen and (max-width: 1240px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &_item {
+      position: relative;
+      height: 400px;
+      margin-bottom: 60px;
+      border-radius: 20px;
+      box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.35);
+
+      cursor: pointer;
+
+      &_img-wrapper {
+        img {
+          width: 100%;
+          max-width: 1024px;
+          height: 400px;
+          margin: auto;
+          border-radius: 20px;
+          // border: 1px solid $primary_color;
+        }
+      }
+      p {
+        width: 60%;
+        margin: auto;
+        padding: 5px 0;
+        color: $secondary100_color;
+        font-weight: 500;
+        border-bottom: 1px dashed $fourth_color;
+      }
+    }
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $fourth_color;
+      border-radius: 20px;
+      opacity: 0;
+      transition: opacity 425ms ease;
+      &:hover {
+        opacity: 0.97;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        p {
+          position: relative;
+          width: 100%;
+          color: $primary_color;
+          font-size: 2.4em;
+          font-weight: 500;
+          overflow: hidden;
+          white-space: nowrap;
+          margin-bottom: 45px;
+          animation: textEffect 900ms steps(30, end);
+          @keyframes textEffect {
+            from {
+              width: 0;
+            }
+            to {
+              width: 100%;
+            }
+          }
+          @media screen and (min-width: 768px) and (max-width: 1240px) {
+            font-size: 1.9em;
+          }
+          @media screen and (max-width: 450px) {
+            font-size: 1.7em;
+          }
+        }
+      }
+    }
+  }
+}

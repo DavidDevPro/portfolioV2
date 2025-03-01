@@ -1,0 +1,32 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.one_project_section_link {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 50px 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+  transition: flex-direction 300ms ease-out, gap 300ms ease-out;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .project_icon {
+      color: $fourth_color;
+      animation: contactIcon 2s ease-in-out infinite;
+      flex-shrink: 0;
+      font-size: 28px;
+    }
+  }
+}

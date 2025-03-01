@@ -1,0 +1,40 @@
+{
+  "name": "portfolio_davidwebprojects_version_2",
+  "description": "portfolio pro davidwebprojects",
+  "author": {
+    "name": "David CHANGEA ",
+    "email": "contact@davidwebprojects.fr",
+    "url": "https://github.com/DavidDevPro"
+  },
+  "private": true,
+  "version": "2.0.0",
+  "releaseDate": "01/03/2025",
+  "type": "module",
+  "scripts": {
+    "deploy": "npm run build && gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "gh-pages": "^6.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^7.2.0",
+    "sass": "^1.72.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "vite": "^6.2.0",
+    "vite-plugin-sitemap": "^0.7.1"
+  }
+}

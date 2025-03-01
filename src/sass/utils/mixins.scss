@@ -1,0 +1,48 @@
+/********** font montserrat **********/
+@mixin montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+/********** font poppins **********/
+@mixin poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+/********** font inter **********/
+@mixin inter {
+  font-family: "Inter", sans-serif;
+}
+
+/********** transition 500ms ease in out **********/
+@mixin transition500 {
+  transition: all 500ms ease-in-out;
+}
+
+/********** transition 350ms ease **********/
+@mixin transition350 {
+  transition: all 350ms ease;
+}
+
+/********** transition 425ms ease **********/
+@mixin transition425 {
+  transition: all 425ms ease;
+}
+
+/********* mixin box shadow *********/
+@mixin shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/********* mixin box shadow_button *********/
+@mixin shadow_button {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+}
+@mixin shadow_card {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15),
+    /* Ombre principale douce */ 0 4px 10px rgba(0, 0, 0, 0.25),
+    /* Ombre secondaire pour profondeur */ 0 1px 3px rgba(0, 0, 0, 0.1),
+    /* Petite ombre pour le détail */ 0 0 10px rgba(147, 197, 253, 0.2); /* Glow subtil bleu (optionnel) */
+
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}

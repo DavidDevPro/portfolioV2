@@ -1,0 +1,51 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.one_project_section_about_project {
+  @include shadow_card;
+  width: 100%;
+  max-width: 1240px;
+  margin: 25px auto 0;
+  padding: 25px;
+  color: $primary_color;
+  background-color: $secondary200_color;
+  border: 2px solid $fourth_color;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 30px;
+  font-size: 1.15em;
+  font-weight: 500;
+
+  &_content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    &_icon {
+      color: $primary200_color;
+      animation: contactIcon 3s ease-in-out infinite;
+      flex-shrink: 0;
+      font-size: 28px;
+      margin-top: 10px;
+    }
+
+    p {
+      padding: 10px 0;
+      position: relative;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      transition: font-size 300ms ease-out, line-height 300ms ease-out;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1em;
+        line-height: 1.3em;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 0.9em;
+        line-height: 1.2em;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.caroussel {
+  @include shadow_card;
+  width: 100%;
+  max-width: 1240px;
+  height: 650px;
+  margin: 50px auto 0px;
+  position: relative;
+  border-radius: 25px;
+  transition: height 300ms ease-out;
+  animation: delayCaroussel 1000ms ease;
+  @media screen and (max-width: 768px) {
+    height: 380px;
+  }
+  &::after {
+    content: "";
+    @include shadow_button;
+    position: absolute;
+    bottom: 0;
+    max-width: 1240px;
+    height: 55px;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    border-radius: 0 0 25px 25px;
+    z-index: 2;
+    opacity: 0.95;
+  }
+  @keyframes delayCaroussel {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  &_img {
+    width: 100%;
+    max-width: 1240px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 25px;
+    z-index: 1;
+    transition: height 300ms ease-out;
+    @media screen and (max-width: 768px) {
+      height: 380px;
+    }
+  }
+  .arrow {
+    @include shadow_button;
+    color: $secondary100_color;
+    background-color: $primary_color;
+    border: 2px solid $fourth_color;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    font-size: 60px;
+    cursor: pointer;
+    transition: font-size 300ms ease-out;
+    @media screen and (max-width: 768px) {
+      font-size: 46px;
+    }
+  }
+  .arrowLeft {
+    left: 20px;
+  }
+  .arrowRight {
+    right: 20px;
+  }
+  .slide_indicator {
+    @include shadow_button;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $secondary100_color;
+    background-color: $primary_color;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 7px 22px;
+    border: 2px solid $fourth_color;
+    border-radius: 25px;
+    opacity: 0.95;
+    z-index: 3;
+    transition: bottom 300ms ease-out;
+    @media screen and (max-width: 768px) {
+      bottom: 9%;
+    }
+  }
+  .slide_dots {
+    position: absolute;
+    bottom: 1.3%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    z-index: 3;
+
+    .slide_dot {
+      @include shadow_button;
+      cursor: pointer;
+      width: 22px;
+      height: 22px;
+      background-color: $secondary100_color;
+      border: 3px solid $fourth_color;
+      border-radius: 50%;
+      backdrop-filter: blur(10px);
+    }
+
+    .active {
+      background-color: $primary_color;
+    }
+  }
+}

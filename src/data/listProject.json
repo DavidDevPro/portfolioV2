@@ -1,0 +1,171 @@
+[
+  {
+    "id": "0",
+    "filterId": 2,
+    "pageId": "DavidWebProjects",
+    "title": "Site David Web Projects",
+    "cover": "./images/cover_davidwebprojects.webp",
+    "pictures": [
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_1.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_2.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_3.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_4.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_5.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_6.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_7.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_8.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_9.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_10.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_11.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_12.webp",
+      "https://portfolio.davidwebprojects.fr/images/davidwebprojects_13.webp"
+    ],
+    "tags": [
+      "NextJs",
+      "TypeScript",
+      "Tailwind CSS",
+      "Laravel",
+      "Méthodologie Agile",
+      "S.E.O"
+    ],
+    "aboutText1": "David Web Projects est une entreprise spécialisée dans la conception et le développement de sites web sur mesure, alliant performance, design et stratégie digitale. Fondée par un expert en développement web, elle accompagne les entreprises et entrepreneurs dans la création de plateformes optimisées pour le référencement, la vitesse et l’expérience utilisateur. Grâce à une expertise approfondie en développement front-end et back-end, chaque projet est conçu avec une approche centrée sur l’efficacité et l’innovation.",
+    "aboutText2": "Le site davidwebprojects.fr est une vitrine technologique démontrant un savoir-faire avancé en développement web. Développé en Next.js pour des performances optimales et un rendu côté serveur (SSR), il est entièrement responsive et conçu avec Tailwind CSS, garantissant une interface fluide et moderne. L’utilisation de TypeScript renforce la robustesse du code, réduisant les erreurs et améliorant la maintenabilité. Côté backend, Laravel assure une gestion sécurisée et évolutive des données, garantissant un site rapide et fiable.",
+    "aboutText3": "L’architecture du site repose sur des bonnes pratiques de développement et d’optimisation SEO avancées. Le code est structuré pour assurer un temps de chargement minimal, grâce à une gestion efficace des assets et à l’optimisation des requêtes. L’hébergement est géré via serveur cloud infomaniak, offrant un contrôle total sur les performances et la sécurité. Des techniques de caching et de préchargement des ressources sont mises en place pour une navigation ultra-rapide et une expérience utilisateur sans friction.",
+    "aboutText4": "David Web Projects ne se limite pas à la création de sites web : l’entreprise propose également des services de refonte, d’optimisation et de maintenance, assurant la pérennité des projets digitaux de ses clients. Chaque collaboration est menée avec une approche agile, garantissant une écoute active et une adaptation aux besoins spécifiques. Que ce soit pour un projet e-commerce, un site vitrine ou une application web, David Web Projects transforme vos idées en solutions digitales performantes et impactantes.",
+    "github": "https://github.com/DavidDevPro/david-front-freelance",
+    "website": "https://davidwebprojects.fr/"
+  },
+  {
+    "id": "1",
+    "filterId": 2,
+    "pageId": "Menu-Maker",
+    "title": "Site Qwenta",
+    "cover": "./images/menu_maker.webp",
+    "pictures": [
+      "https://portfolio.davidwebprojects.fr/images/menu_maker_1.webp",
+      "https://portfolio.davidwebprojects.fr/images/menu_maker_2.webp",
+      "https://portfolio.davidwebprojects.fr/images/menu_maker_3.webp",
+      "https://portfolio.davidwebprojects.fr/images/menu_maker_4.webp",
+      "https://portfolio.davidwebprojects.fr/images/menu_maker_5.webp",
+      "https://portfolio.davidwebprojects.fr/images/menu_maker_6.webp",
+      "https://portfolio.davidwebprojects.fr/images/menu_maker_7.webp"
+    ],
+    "tags": [
+      "Spécifications techniques",
+      "Veille technologique",
+      "Solution technique",
+      "Gestion de projet"
+    ],
+    "aboutText1": "Dans ce projet, j'ai été impliqué dans la planification du développement d'un site web pour un client. Mon rôle était de planifier le développement du site en utilisant la maquette, les spécifications fonctionnelles et les User Stories fournies. J'ai effectué une veille technologique pour rester informé des dernières tendances et technologies pertinentes, en utilisant un système de veille pour suivre les évolutions dans le domaine du développement web.",
+    "aboutText2": "J'ai rédigé les spécifications techniques du projet, en identifiant les besoins fonctionnels et en décomposant les fonctionnalités en tâches spécifiques. Pour organiser le projet de manière structurée et efficace, j'ai utilisé Notion, un outil de gestion de projet pour créer un tableau Kanban, ce qui m'a permis de suivre le déroulement du projet de manière proactive.",
+    "aboutText3": "Ces compétences en planification et gestion de projets sont essentielles dans le domaine du développement web, surtout dans une approche agile. La capacité à traduire les besoins fonctionnels en spécifications techniques et à organiser méthodiquement le travail est cruciale pour le succès des projets informatiques.",
+    "aboutText4": "La maîtrise des outils de veille technologique et de gestion de projet, ainsi que la capacité à présenter des solutions techniques de manière claire et concise, sont indispensables pour le développement agile moderne.",
+    "github": "https://github.com/david-backup/projet-7-qwenta",
+    "website": ""
+  },
+  {
+    "id": "2",
+    "filterId": 2,
+    "pageId": "OfficeNotarialLeSoler",
+    "title": "Site Le Soler",
+    "cover": "./images/cover_soler.webp",
+    "pictures": [
+      "https://portfolio.davidwebprojects.fr/images/soler_1.webp",
+      "https://portfolio.davidwebprojects.fr/images/soler_2.webp",
+      "https://portfolio.davidwebprojects.fr/images/soler_3.webp",
+      "https://portfolio.davidwebprojects.fr/images/soler_4.webp",
+      "https://portfolio.davidwebprojects.fr/images/soler_5.webp",
+      "https://portfolio.davidwebprojects.fr/images/soler_6.webp"
+    ],
+    "tags": [
+      "Photoshop",
+      "Intégration Web",
+      "C.S.S",
+      "P.H.P"
+    ],
+    "aboutText1": "Dans le cadre de ce projet, j'ai été chargé de l'intégration web à partir d'une maquette fournie au format PSD. Ma première étape a consisté à analyser en profondeur cette maquette sous Photoshop afin de comprendre les spécificités du design et les attentes précises en termes d'interface utilisateur.",
+    "aboutText2": "Une fois cette analyse effectuée, j'ai procédé à l'intégration en traduisant fidèlement le design en code. Pour ce faire, j'ai utilisé les technologies suivantes : HTML pour structurer le contenu, CSS pour styliser les éléments conformément à la charte graphique, et PHP pour ajouter des fonctionnalités dynamiques au site. Cette combinaison de technologies a permis de créer un site web interactif et conforme aux standards actuels.",
+    "aboutText3": "Ce projet a été réalisé en tant que prestation de sous-traitance pour l'entreprise **Paul & Ludo** (https://www.paul-ludo.com/), une agence créative basée à Perpignan, spécialisée en conception web, identité visuelle, graphisme, médias sociaux, photographie et vidéo. Travailler avec Paul & Ludo m'a permis de m'immerger dans leur méthodologie spécifique, garantissant une intégration conforme à leurs attentes et aux besoins de leurs clients.",
+    "aboutText4": "En adoptant les méthodes de travail de Paul & Ludo, j'ai assuré une cohérence totale entre le design initial et le produit final. Cette collaboration a mis en évidence l'importance d'une communication fluide et d'une compréhension mutuelle des objectifs pour mener à bien des projets web de haute qualité.",
+    "website": "https://www.notaire-lesoler.fr/office/"
+  },
+  {
+    "id": "3",
+    "filterId": 1,
+    "pageId": "Auto-Street",
+    "title": "Site Auto-Street",
+    "cover": "./images/auto_street_cover.webp",
+    "pictures": [
+      "https://portfolio.davidwebprojects.fr/images/auto_street_1.webp",
+      "https://portfolio.davidwebprojects.fr/images/auto_street_2.webp",
+      "https://portfolio.davidwebprojects.fr/images/auto_street_3.webp",
+      "https://portfolio.davidwebprojects.fr/images/auto_street_4.webp",
+      "https://portfolio.davidwebprojects.fr/images/auto_street_5.webp"
+    ],
+    "tags": [
+      "React",
+      "Sass",
+      "Laravel",
+      "SQL"
+    ],
+    "aboutText1": "Ce projet a été conçu et développé entièrement sur mesure en utilisant React, afin de répondre précisément aux besoins spécifiques d'un ami. Chaque composant a été soigneusement élaboré pour garantir une performance optimale et une expérience utilisateur fluide et intuitive.",
+    "aboutText2": "De plus, la partie back-end est gérée par Laravel, ce qui assure une robustesse et une sécurité accrues, ainsi qu'une intégration harmonieuse entre le client et le serveur.",
+    "aboutText3": "L'administrateur a la capacité de se connecter de manière sécurisée et d'accéder à une interface dédiée, lui permettant de créer, modifier et supprimer ses fiches produits avec une grande facilité. ",
+    "aboutText4": "Cette gestion est rendue possible grâce à une base de données SQL robuste et active, assurant ainsi une gestion efficace et fiable des données produits.",
+    "github": "https://github.com/david-backup/projet_auto-street_react",
+    "website": "https://auto-street.david-devcode.fr/"
+  },
+  {
+    "id": "4",
+    "filterId": 1,
+    "pageId": "ArgentBank",
+    "title": "Site ArgentBank",
+    "cover": "./images/argentbank_cover.webp",
+    "pictures": [
+      "https://portfolio.davidwebprojects.fr/images/argent_bank_1.webp",
+      "https://portfolio.davidwebprojects.fr/images/argent_bank_2.webp",
+      "https://portfolio.davidwebprojects.fr/images/argent_bank_3.webp",
+      "https://portfolio.davidwebprojects.fr/images/argent_bank_4.webp",
+      "https://portfolio.davidwebprojects.fr/images/argent_bank_5.webp",
+      "https://portfolio.davidwebprojects.fr/images/argent_bank_6.webp"
+    ],
+    "tags": [
+      "React",
+      "Sass",
+      "Redux Toolkit",
+      "Swagger"
+    ],
+    "aboutText1": "Dans ce projet, j'ai travaillé sur le développement front-end d'une application bancaire en utilisant React et Redux pour créer une expérience utilisateur dynamique et réactive. Ma mission principale a été d'intégrer le front-end avec le back-end via des appels API, en écrivant des appels à l'API REST pour assurer une communication fluide entre le client et le serveur.",
+    "aboutText2": "J'ai utilisé React pour développer l'interface utilisateur de l'application bancaire, en me concentrant sur la création d'un tableau de bord complet et réactif pour les utilisateurs. Redux a été utilisé pour gérer les données de l'application, assurant ainsi un état global cohérent à travers l'application.",
+    "aboutText3": " Pour définir les points d'accès de l'API et modéliser les interactions avec les données des transactions, j'ai utilisé Swagger, ce qui a facilité la documentation et la maintenabilité de l'interface de programmation.",
+    "aboutText4": "React, Redux et Swagger sont d'excellents choix pour développer un front-end moderne, surtout pour ceux travaillant sur des applications web complexes. Ces outils permettent d'assurer la clarté et la maintenabilité de l'interface de programmation, tout en garantissant le bon fonctionnement de l'application.",
+    "github": "https://github.com/david-backup/projet_11_ArgentBank",
+    "website": "https://david-backup.github.io/projet_11_ArgentBank/"
+  },
+  {
+    "id": "5",
+    "filterId": 1,
+    "pageId": "Portfolio",
+    "title": "Mon Portfolio",
+    "cover": "./images/portfolio_cover.webp",
+    "pictures": [
+      "https://portfolio.davidwebprojects.fr/images/portfolio_1.webp",
+      "https://portfolio.davidwebprojects.fr/images/portfolio_2.webp",
+      "https://portfolio.davidwebprojects.fr/images/portfolio_3.webp",
+      "https://portfolio.davidwebprojects.fr/images/portfolio_4.webp",
+      "https://portfolio.davidwebprojects.fr/images/portfolio_5.webp",
+      "https://portfolio.davidwebprojects.fr/images/portfolio_6.webp"
+    ],
+    "tags": [
+      "Vite",
+      "Sass",
+      "Laravel"
+    ],
+    "aboutText1": "Dans ce projet, j'ai appliqué toutes les compétences acquises au cours de ma formation de développeur.",
+    "aboutText2": "Ce portfolio illustre de manière détaillée les compétences que j'ai acquises et maîtrisées ainsi que les projets que j'ai personnellement réalisés, offrant ainsi une vue d'ensemble de mon parcours professionnel.",
+    "aboutText3": "Il sert non seulement à me présenter de manière exhaustive, mais aussi à faciliter les opportunités de contact pour d'éventuelles collaborations ou offres d'emploi.",
+    "aboutText4": "Ce site a été entièrement développé en utilisant React pour la gestion de l'interface utilisateur dynamique et réactive, ainsi que Sass pour le stylisme CSS avancé, garantissant ainsi un design moderne, maintenable et esthétiquement plaisant.",
+    "github": "https://github.com/david-backup/projet_12_portfolio_version_3",
+    "website": "https://portfolio.davidwebprojects.fr/"
+  }
+]

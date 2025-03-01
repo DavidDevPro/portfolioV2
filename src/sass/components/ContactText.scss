@@ -1,0 +1,90 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.contact_text {
+  width: 100%;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 25px 0;
+  transition: padding 300ms ease-out, margin 300ms ease-out;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+    margin: 30px auto 0;
+  }
+
+  h1 {
+    color: $primary_color;
+    font-size: 5em;
+    font-weight: 600;
+    margin-bottom: 70px;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.205);
+    transition: font-size 300ms ease-out, margin-bottom 300ms ease-out;
+    @media screen and (max-width: 1240px) {
+      font-size: 4.25em;
+      margin-bottom: 25px;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 3.12em;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 2.5em;
+    }
+  }
+  .text_top,
+  .text_bottom {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 10px;
+    color: $secondary100_color;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.498);
+    font-size: 1.4em;
+    font-weight: 400;
+    transition: font-size 300ms ease-out;
+    @media screen and (max-width: 768px) {
+      font-size: 1.2em;
+    }
+  }
+  .text_bottom {
+    margin: 0 auto 100px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed $fourth_color;
+    transition: margin 300ms ease-out;
+    @media screen and (max-width: 768px) {
+      margin: 0 auto 25px;
+    }
+  }
+  .text_question,
+  .text_answer {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: $primary_color;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.205);
+    font-size: 1.8em;
+    font-weight: 700;
+    transition: font-size 300ms ease-out;
+    @media screen and (max-width: 768px) {
+      font-size: 1.6em;
+    }
+  }
+  .text_answer {
+    border-bottom: 1px dashed $fourth_color;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    transition: margin-bottom 300ms ease-out;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}

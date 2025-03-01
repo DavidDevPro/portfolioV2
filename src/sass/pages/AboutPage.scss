@@ -1,0 +1,226 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.main_about_section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  overflow: hidden;
+  transition: flex-direction 300ms ease-out;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  .about {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 50px 30px 0 0;
+    gap: 35px;
+    transition: width 300ms ease-out, text-align 300ms ease-out,
+      padding 300ms ease-out;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    h3 {
+      color: $primary_color;
+      font-size: 2.6em;
+      font-weight: 600;
+      transition: font-size 300ms ease-out;
+      @media screen and (max-width: 768px) {
+        font-size: 2em;
+      }
+    }
+
+    &_text {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding-bottom: 50px;
+      border-bottom: 1px dashed $fourth_color;
+
+      &_website {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        transition: flex-direction 300ms ease-out;
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+
+        p {
+          color: $primary_color;
+          line-height: 1.3em;
+          font-size: 2.6em;
+          font-weight: 600;
+          letter-spacing: 0.15px;
+          transition: font-size 300ms ease-out, letter-spacing 300ms ease-out,
+            line-height 300ms ease-out;
+          transition: font-size 300ms ease-out;
+          @media screen and (max-width: 768px) {
+            font-size: 2em;
+          }
+        }
+      }
+
+      article {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: $secondary100_color;
+        line-height: 1.3em;
+        font-size: 1.25em;
+        letter-spacing: 0.15px;
+        transition: gap 300ms ease-out, font-size 300ms ease-out,
+          letter-spacing 300ms ease-out, line-height 300ms ease-out;
+        @media screen and (max-width: 768px) {
+          gap: 35px;
+          font-size: 1.1em;
+          letter-spacing: 0.6px;
+          line-height: 1.2em;
+        }
+      }
+    }
+    &_infos {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: align-items 300ms ease-out, gap 300ms ease-out;
+        @media screen and (max-width: 1024px) {
+          align-items: center;
+          gap: 25px;
+        }
+
+        li {
+          display: flex;
+          gap: 15px;
+          color: $secondary100_color;
+          line-height: 1.3em;
+          font-size: 1.25em;
+          transition: flex-direction 300ms ease-out, line-height 300ms ease-out,
+            gap 300ms ease-out;
+          @media screen and (max-width: 1024px) {
+            flex-direction: column;
+            line-height: 1em;
+            gap: 5px;
+          }
+
+          .title {
+            color: $primary_color;
+            font-size: 1.15em;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .about_wrapper {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 300ms ease-out, margin 300ms ease-out;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      margin: 50px auto;
+    }
+
+    &_content {
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(175px, $fourth_color, transparent 95%);
+      position: relative;
+      border-radius: 50%;
+      border: 1.5px solid $fourth_color;
+      animation: rotation 20s linear 1s infinite;
+      transition: width 300ms ease-out, height 300ms ease-out;
+      @media screen and (max-width: 768px) {
+        width: 280px;
+        height: 280px;
+      }
+
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      div:nth-child(1) {
+        color: $sass_color;
+        position: absolute;
+        font-size: 80px;
+        top: -15%;
+        left: 41%;
+        transform: rotate(15deg);
+        transition: top 300ms ease-out, left 300ms ease-out;
+        @media screen and (max-width: 768px) {
+          top: -17.5%;
+          left: 40%;
+        }
+      }
+      div:nth-child(2) {
+        color: $react_color;
+        position: absolute;
+        font-size: 80px;
+        top: 37%;
+        right: -11.5%;
+        transition: top 300ms ease-out, right 300ms ease-out;
+        @media screen and (max-width: 768px) {
+          top: 35%;
+          right: -14%;
+        }
+      }
+      div:nth-child(3) {
+        color: $github_color;
+        position: absolute;
+        font-size: 80px;
+        bottom: -10%;
+        left: 41%;
+        transform: rotate(180deg);
+        transition: bottom 300ms ease-out, left 300ms ease-out;
+        @media screen and (max-width: 768px) {
+          bottom: -13%;
+          left: 40%;
+        }
+      }
+      div:nth-child(4) {
+        color: $nodejs_color;
+        position: absolute;
+        font-size: 80px;
+        top: 38%;
+        left: -9%;
+        transform: rotate(-90deg);
+        transition: top 300ms ease-out, left 300ms ease-out;
+        @media screen and (max-width: 768px) {
+          top: 35%;
+          left: -13%;
+        }
+      }
+      div:nth-child(5) {
+        color: $js_color;
+        position: absolute;
+        font-size: 80px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

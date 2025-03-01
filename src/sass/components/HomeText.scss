@@ -1,0 +1,84 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.home_text {
+  color: $secondary100_color;
+  max-width: 1600px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  transition: align-items 300ms ease-out;
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
+
+  h2 {
+    @include montserrat;
+    font-size: 2.5em;
+    font-weight: 500;
+    transition: font-size 300ms ease-out;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 4vw;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 1.5em;
+    }
+  }
+  &_name {
+    display: flex;
+    gap: 15px;
+    font-weight: 500;
+    font-size: 4em;
+    transition: font-size 300ms ease-out;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 6.4vw;
+    }
+  }
+
+  h4 {
+    color: $fourth_color;
+    font-weight: 600;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 6.4vw;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+    }
+  }
+
+  h5 {
+    font-size: 4em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: font-size 300ms ease-out;
+    @media screen and (max-width: 1000px) {
+      font-size: 6.4vw;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 100px;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 1.7em;
+    }
+  }
+  .homeButton {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    transition: flex-direction 300ms ease-out;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}

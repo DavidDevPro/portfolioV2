@@ -1,0 +1,37 @@
+[
+  {
+    "href": "https://x.com/DavidWebProject",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "aria-label": "Twitter",
+    "icon": "FaTwitter"
+  },
+  {
+    "href": "https://www.linkedin.com/in/david-changea",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "aria-label": "Linkedin",
+    "icon": "FaLinkedinIn"
+  },
+  {
+    "href": "https://www.facebook.com/DavidWebProjects/",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "aria-label": "Facebook",
+    "icon": "FaFacebookF"
+  },
+  {
+    "href": "https://github.com/david-backup",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "aria-label": "Github",
+    "icon": "FaGithub"
+  },
+  {
+    "href": "mailto:contact@davidwebprojects.fr",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "aria-label": "Envoyer un message",
+    "icon": "TfiEmail"
+  }
+]

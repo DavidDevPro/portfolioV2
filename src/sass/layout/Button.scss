@@ -1,0 +1,151 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+/****** bouton générique ******/
+.button,
+.button_overlay,
+.contact_button,
+.button_project {
+  @include poppins;
+  @include shadow_button;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 400ms ease-out, color 400ms ease;
+}
+
+/****** bouton page d'accueil ******/
+.button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid $fourth_color;
+  border-radius: 35px;
+  font-size: 1.6em;
+  padding: 5px 25px;
+  color: $secondary100_color;
+  background-color: transparent;
+  transition: box-shadow 0.5s ease-out, background-color 0.4s ease,
+    color 0.4s ease;
+  .button-icon {
+    width: 50px;
+    height: auto;
+    animation: wizz 3s ease-in-out infinite;
+
+    @keyframes wizz {
+      0%,
+      40% {
+        transform: rotate(0deg) scale(1);
+      }
+      45% {
+        transform: rotate(-10deg) scale(1.1);
+      }
+      50% {
+        transform: rotate(10deg) scale(1.1);
+      }
+      55% {
+        transform: rotate(-8deg) scale(1.05);
+      }
+      60% {
+        transform: rotate(4deg) scale(1.02);
+      }
+      65% {
+        transform: rotate(0deg) scale(1);
+      }
+      100% {
+        transform: rotate(0deg) scale(1);
+      }
+    }
+  }
+
+  // Effet Glow au hover
+  &:hover {
+    color: $primary200_color;
+    background-color: $secondary100_color;
+  }
+
+  // Effet balayage lumineux
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 120%;
+    height: 300%;
+    background: linear-gradient(
+      120deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.3),
+      transparent 70%
+    );
+    transform: translate(-50%, -50%) rotate(25deg);
+    transition: left 0.7s ease-out;
+  }
+
+  &:hover::after {
+    left: 150%;
+    transition: left 0.7s ease-out;
+  }
+}
+
+/****** bouton overlay projectpage ******/
+.button_overlay {
+  color: $primary_color;
+  background-color: transparent;
+  border: 2px solid $secondary100_color;
+  border-radius: 12px;
+  font-size: 2em;
+  padding: 9px 70px;
+  &:hover {
+    background-color: $primary200_color;
+    color: $secondary100_color;
+  }
+}
+
+/****** bouton onepageproject ******/
+.button_project {
+  background-color: $primary_color;
+  color: $secondary100_color;
+  border: 2px solid $fourth_color;
+  border-radius: 25px;
+  font-size: 1.2em;
+  padding: 8px 40px;
+  &:hover {
+    background-color: $secondary100_color;
+    color: $primary_color;
+  }
+}
+/****** bouton formulaire de contact ******/
+.contact_button {
+  width: 100%;
+  max-width: 300px;
+  color: $primary_color;
+  background-color: $primary200_color;
+  border: 2px solid $fourth_color;
+  border-radius: 25px;
+  font-size: 1.6em;
+  padding: 8px 30px;
+  margin: 0 auto;
+  &:hover {
+    background-color: $secondary100_color;
+    color: $primary200_color;
+  }
+}
+
+/****** bouton vers le site David Web Projects ******/
+.buttonWebsite {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: $secondary100_color;
+  background-color: $primary_color;
+  border: 2px solid $fourth_color;
+  border-radius: 35px;
+  font-size: 1.6em;
+  padding: 5px 25px;
+  &:hover {
+    color: $primary_color;
+    background-color: $secondary100_color;
+  }
+}

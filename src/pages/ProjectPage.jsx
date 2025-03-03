@@ -1,10 +1,10 @@
 import { useState } from "react";
 import HeadPages from "../components/HeadPages";
-import { FaDev } from "react-icons/fa6";
 import dataFilter from "../data/filterProject.json";
 import dataProject from "../data/listProject.json";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
+import { MdComputer } from "react-icons/md";
 
 const ProjectPage = () => {
   const [filteredId, setFilteredId] = useState(0);
@@ -24,7 +24,7 @@ const ProjectPage = () => {
       : dataProject.filter((item) => item.filterId === filteredId);
   return (
     <main>
-      <HeadPages headText="Mes projets" icon={<FaDev />} />
+      <HeadPages headText="Mes projets" icon={<MdComputer />} />
       <section>
         <div className="filter">
           <ul className="filter_items">
@@ -56,7 +56,7 @@ const ProjectPage = () => {
                       <p>{item.title}</p>
                       <Link to={`/project/${item.id}`}>
                         <Button
-                          className={"button button_overlay"}
+                          className={"button overlayButton"}
                           type={"submit"}
                           text={"Visiter"}
                         />

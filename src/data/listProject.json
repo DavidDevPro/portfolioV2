@@ -2,8 +2,8 @@
   {
     "id": "0",
     "filterId": 2,
-    "pageId": "DavidWebProjects",
-    "title": "Site David Web Projects",
+    "pageId": "David Web Projects",
+    "title": "David Web Projects",
     "cover": "./images/cover_davidwebprojects.webp",
     "pictures": [
       "https://portfolio.davidwebprojects.fr/images/davidwebprojects_1.webp",
@@ -39,7 +39,7 @@
     "id": "1",
     "filterId": 2,
     "pageId": "Menu-Maker",
-    "title": "Site Qwenta",
+    "title": "Qwenta",
     "cover": "./images/menu_maker.webp",
     "pictures": [
       "https://portfolio.davidwebprojects.fr/images/menu_maker_1.webp",
@@ -66,8 +66,8 @@
   {
     "id": "2",
     "filterId": 2,
-    "pageId": "OfficeNotarialLeSoler",
-    "title": "Site Le Soler",
+    "pageId": "Office Notarial Le Soler",
+    "title": "Le Soler",
     "cover": "./images/cover_soler.webp",
     "pictures": [
       "https://portfolio.davidwebprojects.fr/images/soler_1.webp",
@@ -93,7 +93,7 @@
     "id": "3",
     "filterId": 1,
     "pageId": "Auto-Street",
-    "title": "Site Auto-Street",
+    "title": "Auto-Street",
     "cover": "./images/auto_street_cover.webp",
     "pictures": [
       "https://portfolio.davidwebprojects.fr/images/auto_street_1.webp",
@@ -111,15 +111,13 @@
     "aboutText1": "Ce projet a été conçu et développé entièrement sur mesure en utilisant React, afin de répondre précisément aux besoins spécifiques d'un ami. Chaque composant a été soigneusement élaboré pour garantir une performance optimale et une expérience utilisateur fluide et intuitive.",
     "aboutText2": "De plus, la partie back-end est gérée par Laravel, ce qui assure une robustesse et une sécurité accrues, ainsi qu'une intégration harmonieuse entre le client et le serveur.",
     "aboutText3": "L'administrateur a la capacité de se connecter de manière sécurisée et d'accéder à une interface dédiée, lui permettant de créer, modifier et supprimer ses fiches produits avec une grande facilité. ",
-    "aboutText4": "Cette gestion est rendue possible grâce à une base de données SQL robuste et active, assurant ainsi une gestion efficace et fiable des données produits.",
-    "github": "https://github.com/david-backup/projet_auto-street_react",
-    "website": "https://auto-street.david-devcode.fr/"
+    "aboutText4": "Cette gestion est rendue possible grâce à une base de données SQL robuste et active, assurant ainsi une gestion efficace et fiable des données produits."
   },
   {
     "id": "4",
     "filterId": 1,
     "pageId": "ArgentBank",
-    "title": "Site ArgentBank",
+    "title": "ArgentBank",
     "cover": "./images/argentbank_cover.webp",
     "pictures": [
       "https://portfolio.davidwebprojects.fr/images/argent_bank_1.webp",

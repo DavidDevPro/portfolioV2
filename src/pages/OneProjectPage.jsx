@@ -6,8 +6,8 @@ import { Link, useParams } from "react-router-dom";
 import Caroussel from "../components/Caroussel";
 import ProjectTags from "../components/ProjectTags";
 import ProjectSectionText from "../components/ProjectSectionText";
-import ProjectLinksSection from "../components/ProjectSectionLinks";
 import ScrollTo from "../components/ScrollTo";
+import ProjectSectionLinks from "../components/ProjectSectionLinks";
 
 const OneProjectPage = () => {
   const { id } = useParams();
@@ -15,7 +15,7 @@ const OneProjectPage = () => {
 
   return (
     <main>
-      <HeadPages headText={`Projet ${data.pageId}`} icon={<FaFileWaveform />} />
+      <HeadPages headText={data.pageId} icon={<FaFileWaveform />} />
       <section className="one_project_section">
         <h1>Images du projet</h1>
         <Caroussel slides={data.pictures} />
@@ -44,7 +44,7 @@ const OneProjectPage = () => {
           ]}
         />
 
-        <ProjectLinksSection
+        <ProjectSectionLinks
           links={[
             data.github ? { url: data.github, text: "Vers GitHub" } : null,
             data.website ? { url: data.website, text: "Voir le site" } : null,

@@ -11,7 +11,7 @@ const ProjectSectionLinks = ({ links }) => {
           <a href={link.url} target="_blank" rel="noopener noreferrer">
             <Button
               type={"submit"}
-              className={"button_project"}
+              className={"button projectButton"}
               text={link.text}
             />
           </a>

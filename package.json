@@ -4,10 +4,10 @@
   "author": {
     "name": "David CHANGEA ",
     "email": "contact@davidwebprojects.fr",
-    "url": "https://github.com/DavidDevPro"
+    "url": "https://github.com/DavidDevPro/portfolioV2"
   },
   "private": true,
-  "version": "2.0.0",
+  "version": "2.0.1",
   "releaseDate": "01/03/2025",
   "type": "module",
   "scripts": {
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "framer-motion": "^12.4.7",
     "gh-pages": "^6.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

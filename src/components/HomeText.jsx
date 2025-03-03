@@ -13,7 +13,7 @@ const HomeText = () => {
       <div className="homeButton">
         <Link to="/contact">
           <Button
-            className="button"
+            className="button accueilButton"
             type="submit"
             icon="/images/enveloppe.png"
             text="Contactez-moi"
@@ -26,7 +26,7 @@ const HomeText = () => {
           rel="noopener noreferrer"
         >
           <Button
-            className="button buttonWebsite"
+            className="button websiteButton"
             type="button"
             text="David Web Projects"
             icon="/images/logo-landing.png"

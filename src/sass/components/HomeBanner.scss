@@ -1,9 +1,25 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> HOME BANNER                               
+  ╚═════════════════════════════════════════════════════╝ */
+
 .banner_img {
   width: 100%;
   height: 650px;
   object-fit: cover;
+  background-position: center;
   transition: height 300ms ease-out;
-  @media screen and (max-width: 768px) {
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1920px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1920px) {
+  .banner_img {
+    height: 33.854vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner_img {
     height: 350px;
   }
 }

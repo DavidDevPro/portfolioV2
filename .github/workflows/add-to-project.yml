@@ -18,7 +18,7 @@ jobs:
       - uses: actions/add-to-project@v1.0.2
         with:
           project-url: https://github.com/users/DavidDevPro/projects/9
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.MY_GITHUB_TOKEN }}
           # Vous pouvez ajouter des filtres de labels si nécessaire
           # labeled: bug, enhancement
           # label-operator: OR

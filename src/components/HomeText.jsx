@@ -7,9 +7,9 @@ const HomeText = () => {
       <h2>Bonjour,</h2>
       <div className="home_text_name">
         <h3>Je suis </h3>
-        <h4>David</h4>
+        <h4 className="hero_name">David</h4>
       </div>
-      <h5>Développeur Front-End</h5>
+      <h5 class="developer_title">Concepteur de Solutions Web</h5>
       <div className="homeButton">
         <Link to="/contact">
           <Button

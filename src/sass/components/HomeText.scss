@@ -1,16 +1,20 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> HOME TEXT                                
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
 .home_text {
   color: $secondary100_color;
   max-width: 1600px;
+  height: auto;
   width: 100%;
   margin: 30px auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 25px;
+  gap: 23px;
   transition: align-items 300ms ease-out;
 
   @media screen and (max-width: 768px) {
@@ -19,7 +23,7 @@
 
   h2 {
     @include montserrat;
-    font-size: 2.5em;
+    font-size: 40px;
     font-weight: 500;
     transition: font-size 300ms ease-out;
 
@@ -34,30 +38,30 @@
     display: flex;
     gap: 15px;
     font-weight: 500;
-    font-size: 4em;
+    font-size: 65px;
     transition: font-size 300ms ease-out;
 
     @media screen and (max-width: 1000px) {
       font-size: 6.4vw;
     }
   }
-
-  h4 {
-    color: $fourth_color;
-    font-weight: 600;
-
-    @media screen and (max-width: 1000px) {
-      font-size: 6.4vw;
-    }
-    @media screen and (max-width: 768px) {
-      font-size: 1em;
-    }
+  .hero_name {
+    font-weight: 800;
+    background: linear-gradient(90deg, $fourth_color, $primary_color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(16, 117, 156, 0.3);
   }
 
-  h5 {
-    font-size: 4em;
-    font-weight: 500;
-    margin-bottom: 20px;
+  .developer_title {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: $primary_color;
+    text-transform: uppercase;
+
     transition: font-size 300ms ease-out;
     @media screen and (max-width: 1000px) {
       font-size: 6.4vw;
@@ -69,6 +73,10 @@
       font-size: 1.7em;
     }
   }
+
+  /* -------------------------------------------------------
+   🛠️ homeButton 
+   ------------------------------------------------------- */
   .homeButton {
     display: flex;
     flex-wrap: wrap;
@@ -76,9 +84,37 @@
     align-items: center;
     gap: 25px;
     transition: flex-direction 300ms ease-out;
+  }
+}
 
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1920px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1920px) {
+  .home_text {
+    max-width: 83.333vw;
+    margin: 1.562vw auto;
+    padding: 0 1.041vw;
+    gap: 1.197vw;
+
+    h2 {
+      font-size: 2.083vw;
+    }
+    &_name {
+      gap: 0.781vw;
+      font-size: 3.385vw;
+    }
+    .hero_name {
+      text-shadow: 0.104vw 0.104vw 0.26vw rgba(16, 117, 156, 0.3);
+    }
+
+    .developer_title {
+      font-size: 2.604vw;
+    }
+
+    /* 🛠️ homeButton  */
+    .homeButton {
+      gap: 1.302vw;
     }
   }
 }

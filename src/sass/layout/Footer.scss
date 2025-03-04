@@ -60,6 +60,7 @@
         &:hover {
           background: $secondary100_color;
           color: $primary_color;
+          transform: scale(1.1);
         }
       }
     }
@@ -128,7 +129,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ===> 🖥️ MEDIA QUERY : Max-width 768px
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .footer {
     padding: 20px;
     height: auto;

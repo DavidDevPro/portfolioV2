@@ -216,3 +216,58 @@
     padding: 0.416vw 1.041vw;
   }
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1600px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1600px) {
+  /* 🛠️ Bouton générique */
+  .button {
+    .button-icon {
+      width: 41.664px;
+    }
+  }
+
+  /* 🛠️ accueilButton  */
+  .accueilButton {
+    gap: 12.5px;
+    border: 1.67px solid $fourth_color;
+    border-radius: 29.16px;
+    font-size: 21.33px;
+    padding: 4.16px 20.83px;
+  }
+
+  /* 🛠️ accueilButton */
+  .websiteButton {
+    gap: 12.5px;
+    border: 1.67px solid $fourth_color;
+    border-radius: 29.16px;
+    font-size: 21.33px;
+    padding: 4.16px 20.83px;
+  }
+
+  /* 🛠️ overlayButton */
+  .overlayButton {
+    border: 1.67px solid $secondary100_color;
+    border-radius: 10px;
+    font-size: 26.66px;
+    padding: 5.82px 58.32px;
+  }
+
+  /* 🛠️ projectButton */
+  .projectButton {
+    border: 1.67px solid $fourth_color;
+    border-radius: 1.302vw;
+    font-size: 1vw;
+    padding: 0.416vw 2.083vw;
+  }
+
+  /* 🛠️ contactButton */
+  .contactButton {
+    max-width: 250px;
+    border: 1.67px solid $fourth_color;
+    border-radius: 41.66px;
+    font-size: 21.33px;
+    padding: 6.66px 16.66px;
+  }
+}

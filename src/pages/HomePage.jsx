@@ -4,7 +4,7 @@ import HomeText from "../components/HomeText";
 
 const HomePage = () => {
   return (
-    <main>
+    <main className="homePage">
       <HomeBanner imgSrc={srcBanner} />
       <HomeText />
     </main>

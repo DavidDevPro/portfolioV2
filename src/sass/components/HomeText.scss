@@ -15,24 +15,13 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 23px;
-  transition: align-items 300ms ease-out;
-
-  @media screen and (max-width: 768px) {
-    align-items: center;
-  }
+  transition: align-items 300ms ease-out, padding 300ms ease-out;
 
   h2 {
     @include montserrat;
     font-size: 40px;
     font-weight: 500;
     transition: font-size 300ms ease-out;
-
-    @media screen and (max-width: 1000px) {
-      font-size: 4vw;
-    }
-    @media screen and (max-width: 450px) {
-      font-size: 1.5em;
-    }
   }
   &_name {
     display: flex;
@@ -40,10 +29,6 @@
     font-weight: 500;
     font-size: 65px;
     transition: font-size 300ms ease-out;
-
-    @media screen and (max-width: 1000px) {
-      font-size: 6.4vw;
-    }
   }
   .hero_name {
     font-weight: 800;
@@ -61,17 +46,7 @@
     font-family: "Poppins", sans-serif;
     color: $primary_color;
     text-transform: uppercase;
-
     transition: font-size 300ms ease-out;
-    @media screen and (max-width: 1000px) {
-      font-size: 6.4vw;
-    }
-    @media screen and (max-width: 768px) {
-      margin-bottom: 100px;
-    }
-    @media screen and (max-width: 450px) {
-      font-size: 1.7em;
-    }
   }
 
   /* -------------------------------------------------------
@@ -115,6 +90,103 @@
     /* 🛠️ homeButton  */
     .homeButton {
       gap: 1.302vw;
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1600px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1600px) {
+  .home_text {
+    max-width: 1333.32px;
+    margin: 24.99px auto;
+    padding: 50px 16.65px;
+    gap: 19.15px;
+
+    h2 {
+      font-size: 33.33px;
+    }
+    &_name {
+      gap: 12.5px;
+      font-size: 54.16px;
+    }
+    .hero_name {
+      text-shadow: 1.66px 1.66px 4.16px rgba(16, 117, 156, 0.3);
+    }
+
+    .developer_title {
+      font-size: 41.67px;
+    }
+
+    /* 🛠️ homeButton  */
+    .homeButton {
+      gap: 20.84px;
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .home_text {
+    max-width: 133.332vw;
+    margin: 2.5vw auto;
+    padding: 5vw 1.665vw;
+    gap: 1.915vw;
+
+    h2 {
+      font-size: 3.333vw;
+    }
+    &_name {
+      gap: 1.125vw;
+      font-size: 5.416vw;
+    }
+    .hero_name {
+      text-shadow: 0.166vw 0.166vw 0.416vw rgba(16, 117, 156, 0.3);
+    }
+
+    .developer_title {
+      font-size: 4.167vw;
+    }
+
+    /* 🛠️ homeButton  */
+    .homeButton {
+      gap: 2.084vw;
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 700px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 700px) {
+  .home_text {
+    align-items: center;
+    max-width: 933.32px;
+    margin: 17.5px auto;
+    padding: 35px 11.66px;
+    gap: 20px;
+
+    h2 {
+      font-size: 23.34px;
+    }
+    &_name {
+      gap: 7.88px;
+      font-size: 37.92px;
+    }
+    .hero_name {
+      text-shadow: 1.17px 1.17px 2.92px rgba(16, 117, 156, 0.3);
+    }
+
+    .developer_title {
+      margin-bottom: 50px;
+      font-size: 20px;
+    }
+    .homeButton {
+      flex-direction: column;
+      gap: 30px;
     }
   }
 }

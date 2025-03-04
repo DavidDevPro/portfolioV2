@@ -1,3 +1,6 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> HEADER                                 
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
@@ -38,6 +41,7 @@ header {
         gap: 15px;
 
         &_img {
+          width: 80px;
           animation: floatingLogo 4s ease-in-out infinite;
 
           @keyframes floatingLogo {
@@ -63,27 +67,6 @@ header {
         align-items: center;
         gap: 30px;
         transition: all 500ms ease-out;
-        @media screen and (max-width: 768px) {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100vh;
-          position: absolute;
-          top: 100px;
-          left: -100%;
-          opacity: 0;
-          transition: left 500ms ease-out, opacity 500ms ease-out,
-            background-color 500ms ease-out;
-          gap: 40px;
-
-          &.active {
-            background-color: $primary_color;
-            left: 0px;
-            opacity: 1;
-          }
-        }
 
         &_item {
           @include poppins;
@@ -126,5 +109,122 @@ header {
       cursor: pointer;
       color: $secondary100_color;
     }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1920px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1920px) {
+  header {
+    height: 5.208vw;
+
+    .navigation {
+      padding: 0 1.041vw;
+      height: 5.208vw;
+
+      &_container {
+        &_logo {
+          letter-spacing: 0.031vw;
+          font-size: 1.666vw;
+          gap: 0.781vw;
+
+          &_img {
+            width: 4.166vw;
+          }
+        }
+
+        &_menu {
+          gap: 1.562vw;
+
+          &_item {
+            font-size: 1.416vw;
+
+            &::after {
+              content: "";
+              height: 0.156vw;
+              border-radius: 0.104vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1600px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1600px) {
+  header {
+    height: 83.3px;
+
+    .navigation {
+      padding: 0 16.65px;
+      height: 83.3px;
+
+      &_container {
+        &_logo {
+          letter-spacing: 0.5px;
+          font-size: 26.65px;
+          gap: 12.49px;
+
+          &_img {
+            width: 66.65px;
+          }
+        }
+
+        &_menu {
+          gap: 24.99px;
+
+          &_item {
+            font-size: 22.65px;
+
+            &::after {
+              content: "";
+              height: 2.49px;
+              border-radius: 1.66px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 768px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  .navigation {
+    padding: 0 20px;
+    height: 83px;
+    opacity: 1;
+  }
+  .navigation_container_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 83px;
+    left: -100%;
+    opacity: 0;
+    transition: left 500ms ease-out, opacity 500ms ease-out,
+      background-color 500ms ease-out;
+    gap: 40px;
+
+    &.active {
+      background-color: $primary_color;
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  .menu_hamburger_icon {
+    display: block;
+    cursor: pointer;
+    color: $secondary100_color;
   }
 }

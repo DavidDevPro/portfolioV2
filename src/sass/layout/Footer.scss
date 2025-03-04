@@ -1,3 +1,6 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> FOOTER                                 
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
@@ -10,10 +13,6 @@
   display: flex;
   align-items: center;
   transition: padding 300ms ease-out, height 300ms ease-out;
-  @media screen and (max-width: 768px) {
-    padding: 20px;
-    height: auto;
-  }
 
   &_content {
     width: 100%;
@@ -25,11 +24,6 @@
     align-items: center;
     justify-content: space-between;
     transition: flex-direction 300ms ease-out, gap 300ms ease-out;
-    @media screen and (max-width: 768px) {
-      flex-direction: column-reverse;
-      padding: 0px;
-      gap: 10px;
-    }
 
     &_copyright {
       @include poppins;
@@ -68,6 +62,81 @@
           color: $primary_color;
         }
       }
+    }
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1920px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1920px) {
+  .footer {
+    height: 6.25vw;
+
+    &_content {
+      max-width: 83.333vw;
+      padding: 0 1.041vw;
+
+      &_copyright {
+        font-size: 0.875vw;
+        padding-right: 1.041vw;
+        .mentions_link {
+          font-size: 0.895vw;
+        }
+      }
+      &_boxIcon {
+        gap: 0.781vw;
+
+        &_icon {
+          border: 0.104vw solid $fourth_color;
+          padding: 0.625vw;
+        }
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1600px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1600px) {
+  .footer {
+    height: 100px;
+
+    &_content {
+      max-width: 1333.32px;
+      padding: 0 16.65px;
+
+      &_copyright {
+        font-size: 14px;
+        padding-right: 16.65px;
+        .mentions_link {
+          font-size: 14.32px;
+        }
+      }
+      &_boxIcon {
+        gap: 12.49px;
+
+        &_icon {
+          border: 1.67px solid $fourth_color;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 768px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+    height: auto;
+
+    &_content {
+      flex-direction: column-reverse;
+      padding: 0px;
+      gap: 10px;
     }
   }
 }

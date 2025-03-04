@@ -1,3 +1,6 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> HEADPAGE                                
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
@@ -14,9 +17,6 @@
     font-weight: 600;
     transition: font-size 300ms ease-out;
 
-    @media screen and (max-width: 768px) {
-      font-size: 2em;
-    }
     @media screen and (max-width: 450px) {
       font-size: 1.6em;
     }
@@ -38,9 +38,6 @@
       transition: font-size 300ms ease-out;
       animation: shimmer 2s infinite ease-in-out, float 5s ease-in-out infinite;
 
-      @media screen and (max-width: 768px) {
-        font-size: 35px;
-      }
       @media screen and (max-width: 450px) {
         font-size: 28px;
       }
@@ -76,6 +73,98 @@
         100% {
           transform: translateY(0) rotate(0deg) scale(1);
         }
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1920px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1920px) {
+  .head_page {
+    padding: 0.781vw 1.041vw;
+    border-bottom: 0.052vw dashed $fourth_color;
+
+    h2 {
+      font-size: 1.833vw;
+    }
+
+    span {
+      padding: 0.625vw;
+      box-shadow: 0 0.208vw 0.416vw rgba(0, 0, 0, 0.1);
+
+      svg {
+        font-size: 2.083vw;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1600px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1600px) {
+  .head_page {
+    padding: 12.5px 16.66px;
+    border-bottom: 0.83px dashed $fourth_color;
+
+    h2 {
+      font-size: 29.33px;
+    }
+
+    span {
+      padding: 10px;
+      box-shadow: 0 3.33px 6.66px rgba(0, 0, 0, 0.1);
+
+      svg {
+        font-size: 33.33px;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .head_page {
+    padding: 1.25vw 1.666vw;
+    border-bottom: 0.083vw dashed $fourth_color;
+
+    h2 {
+      font-size: 2.933vw;
+    }
+
+    span {
+      padding: 1vw;
+      box-shadow: 0 0.333vw 0.666vw rgba(0, 0, 0, 0.1);
+
+      svg {
+        font-size: 3.333vw;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 768px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  .head_page {
+    padding: 9.6px 12.8px;
+    border-bottom: 0.638px dashed $fourth_color;
+
+    h2 {
+      font-size: 22.53px;
+    }
+
+    span {
+      padding: 7.68px;
+      box-shadow: 0 2.56px 5.12px rgba(0, 0, 0, 0.1);
+
+      svg {
+        font-size: 25.6px;
       }
     }
   }

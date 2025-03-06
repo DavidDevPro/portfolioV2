@@ -1,23 +1,34 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> CONTACTPAGE                                
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
 .main {
   position: relative;
   opacity: 1;
-  z-index: 1;
+  z-index: 2;
 
   .contact_img {
+    width: 100%;
+    min-height: 100vh;
     background: linear-gradient(
         to bottom,
         rgba(25, 40, 70, 0.5) 15%,
-        /* Transition douce à mi-hauteur */ rgba(25, 40, 70, 1) 100%
+        /* Transition douce à mi-hauteur */ rgba(25, 40, 70, 0.9) 100%
           /* Couleur finale en bas */
       ),
       url(/images/homeBanner.webp);
     background-size: cover;
+    background-position: 15% center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+    background-attachment: fixed;
+    transition: background-position 300ms ease-out;
+    @media screen and (max-width: 1000px) {
+      background-position: 24% center;
+    }
   }
 
   .contact_section,
@@ -31,18 +42,11 @@
     max-width: 1600px;
     padding: 60px 20px 0px;
     transition: padding 300ms ease-out;
-    @media screen and (max-width: 768px) {
-      padding: 0px 20px 0px;
-    }
   }
   .contact_section_form {
     max-width: 800px;
     padding: 100px 20px 85px;
     transition: padding 300ms ease-out, max-width 300ms ease-out;
-    @media screen and (max-width: 768px) {
-      padding: 0px 25px 0px;
-      max-width: 700px;
-    }
   }
   .scroll_button {
     width: 100%;
@@ -55,16 +59,14 @@
     align-items: center;
     justify-content: center;
     margin: 100px auto 30px;
+    transform: scale(1);
     transition: background-color 400ms ease-out, opacity 300ms ease-out,
-      margin 300ms ease-out, height 300ms ease-out, width 300ms ease-out;
-    @media screen and (max-width: 768px) {
-      opacity: 0;
-      margin: 0px auto 0px;
-      height: 0px;
-      width: 0;
-    }
+      margin 300ms ease-out, height 300ms ease-out, width 300ms ease-out,
+      transform 400ms ease-in-out;
+
     &:hover {
       background-color: $github_color;
+      transform: scale(1.05);
     }
 
     &_icon {
@@ -84,6 +86,102 @@
           transform: translateY(-4px);
         }
       }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1920px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1920px) {
+  .main {
+    .contact_section {
+      max-width: 83.333vw;
+      padding: 3.125vw 1.041vw 0px;
+    }
+    .contact_section_form {
+      max-width: 41.666vw;
+      padding: 5.208vw 1.041vw 4.427vw;
+    }
+    .scroll_button {
+      max-width: 4.166vw;
+      height: 4.166vw;
+      border: 0.104vw solid $fourth_color;
+      margin: 5.208vw auto 1.562vw;
+
+      &_icon {
+        font-size: 2.083vw;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1600px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1600px) {
+  .main {
+    .contact_section {
+      max-width: 1333.33px;
+      padding: 50px 16.66px 0px;
+    }
+    .contact_section_form {
+      max-width: 666.66px;
+      padding: 83.33px 16.66px 70.83px;
+    }
+    .scroll_button {
+      max-width: 66.66px;
+      height: 66.66px;
+      border: 1.67px solid $fourth_color;
+      margin: 83.33px auto 25px;
+
+      &_icon {
+        font-size: 33.33px;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .main {
+    .contact_section {
+      max-width: 133.333vw;
+      padding: 5vw 1.666vw 0px;
+    }
+    .contact_section_form {
+      max-width: 66.666vw;
+      padding: 8.333vw 1.666vw 7.083vw;
+    }
+    .scroll_button {
+      opacity: 0;
+      margin: 0 auto 0;
+      height: 0;
+      width: 0;
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 768px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  .main {
+    .contact_section {
+      max-width: 1024px;
+      padding: 38.4px 8px 0px;
+    }
+    .contact_section_form {
+      max-width: 507px;
+      padding: 64px 12.8px 54.4px;
+    }
+    .scroll_button {
+      opacity: 0;
+      margin: 0 auto 0;
+      height: 0;
+      width: 0;
     }
   }
 }

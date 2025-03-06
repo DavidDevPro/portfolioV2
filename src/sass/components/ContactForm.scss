@@ -1,16 +1,14 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> CONTACT FORM                              
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
 .contact_form {
   @include shadow;
-  border-radius: 50px;
+  border-radius: 30px;
   background-color: $secondary200_color;
   transition: background-color 300ms ease-out, box-shadow 300ms ease-out;
-
-  @media screen and (max-width: 768px) {
-    background-color: transparent;
-    box-shadow: none;
-  }
 
   form {
     width: 100%;
@@ -18,26 +16,16 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     padding: 0 20px 60px 20px;
-
-    @media screen and (max-width: 768px) {
-      padding: 0 0 30px 0;
-    }
 
     h2 {
       color: $primary_color;
-      font-size: 3em;
+      font-size: 40px;
       font-weight: 600;
-      margin: 40px 0;
-      transition: font-size 300ms ease-out, color 300ms ease-out,
-        width 300ms ease-out;
-
-      @media screen and (max-width: 768px) {
-        font-size: 2.2em;
-        color: $secondary100_color;
-        margin: 25px 0;
-      }
+      margin: 50px 0;
+      text-transform: uppercase;
+      transition: font-size 300ms ease-out, color 300ms ease-out;
     }
 
     // Animation pour les icônes dans les labels
@@ -63,10 +51,12 @@
         opacity: 1;
       }
     }
-    // Animation appliquée directement à `.contact_icon`
     .contact_icon {
-      color: $fourth_color;
-      font-size: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $react_color;
+      font-size: 25px;
       flex-shrink: 0;
       animation: contactIcon 3s ease-in-out infinite;
     }
@@ -81,19 +71,16 @@
     padding: 10px;
     margin-bottom: 70px;
     outline: none;
-    border: 2px solid $fourth_color;
-    background-color: $primary200_color;
-    color: $secondary100_color;
+    border: 1px solid $primary200_color;
+    background-color: $fourth_color;
+    color: $primary_color;
     opacity: 0.96;
     transition: margin-bottom 300ms ease-out;
 
-    @media screen and (max-width: 768px) {
-      margin-bottom: 50px;
-    }
-
     &::placeholder {
-      font-size: 0.85em;
-      color: $secondary100_color;
+      @include poppins;
+      font-size: 13px;
+      color: $primary_color;
     }
   }
 }
@@ -109,4 +96,180 @@
   padding: 10px;
   font-size: 1.05em;
   font-weight: 400;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1920px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1920px) {
+  .contact_form {
+    border-radius: 1.562vw;
+
+    form {
+      max-width: 33.854vw;
+      gap: 0.416vw;
+      padding: 0 1.041vw 3.125vw 1.041vw;
+
+      h2 {
+        font-size: 2.083vw;
+        margin: 2.604vw 0;
+      }
+
+      .contact_icon {
+        font-size: 1.302vw;
+      }
+    }
+
+    textarea {
+      font-size: 1.041vw;
+      height: 6.77vw;
+      border-radius: 0.781vw;
+      padding: 0.52vw;
+      margin-bottom: 3.645vw;
+      border: 0.052vw solid $primary200_color;
+
+      &::placeholder {
+        font-size: 0.677vw;
+      }
+    }
+  }
+
+  .confirmation_message {
+    max-width: 26.041vw;
+    border: 0.052vw solid $fourth_color;
+    border-radius: 1.041vw;
+    margin: 0.26vw auto;
+    padding: 0.52vw;
+    font-size: 0.937vw;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1600px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1600px) {
+  .contact_form {
+    border-radius: 25px;
+
+    form {
+      max-width: 541.67px;
+      gap: 6.66px;
+      padding: 0 16.66px 50px 16.66px;
+
+      h2 {
+        font-size: 33.33px;
+        margin: 41.66px 0;
+      }
+
+      .contact_icon {
+        font-size: 20.84px;
+      }
+    }
+
+    textarea {
+      font-size: 16.66px;
+      height: 108.32px;
+      border-radius: 12.5px;
+      padding: 8.32px;
+      margin-bottom: 58.32px;
+      border: 0.84px solid $primary200_color;
+
+      &::placeholder {
+        font-size: 10.84px;
+      }
+    }
+  }
+
+  .confirmation_message {
+    max-width: 416.66px;
+    border: 0.84px solid $fourth_color;
+    border-radius: 16.66px;
+    margin: 4.16px auto;
+    padding: 8.32px;
+    font-size: 15px;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .contact_form {
+    border-radius: 2.5vw;
+
+    form {
+      max-width: 54.167vw;
+      gap: 0.666vw;
+      padding: 0 1.666vw 5vw 1.666vw;
+
+      h2 {
+        font-size: 3.333vw;
+        margin: 4.166vw 0;
+      }
+
+      .contact_icon {
+        font-size: 2.084vw;
+      }
+    }
+
+    textarea {
+      font-size: 1.666vw;
+      height: 10.832vw;
+      border-radius: 1.25vw;
+      padding: 0.832vw;
+      margin-bottom: 5.832vw;
+      border: 0.084vw solid $primary200_color;
+    }
+  }
+
+  .confirmation_message {
+    max-width: 41.666vw;
+    border: 0.084vw solid $fourth_color;
+    border-radius: 1.666vw;
+    margin: 0.416vw auto;
+    padding: 0.832vw;
+    font-size: 1.5vw;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 768px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  .contact_form {
+    border-radius: 19.2px;
+
+    form {
+      max-width: 416px;
+      gap: 5.12px;
+      padding: 0 12.8px 38.4px 12.8px;
+
+      h2 {
+        font-size: 22px;
+        margin: 32px 0;
+      }
+
+      .contact_icon {
+        font-size: 20px;
+      }
+    }
+
+    textarea {
+      font-size: 14px;
+      height: 83.19px;
+      border-radius: 9.6px;
+      padding: 6.39px;
+      margin-bottom: 44.79px;
+      border: 0.65px solid $primary200_color;
+    }
+  }
+
+  .confirmation_message {
+    max-width: 83.19px;
+    border: 0.65px solid $fourth_color;
+    border-radius: 12.8px;
+    margin: 3.2px auto;
+    padding: 6.39px;
+    font-size: 11.52px;
+  }
 }

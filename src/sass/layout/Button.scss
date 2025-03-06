@@ -150,15 +150,15 @@
   width: 100%;
   max-width: 300px;
   color: $primary_color;
-  background-color: $primary200_color;
-  border: 2px solid $fourth_color;
+  background-color: $fourth_color;
+  border: 2px solid $primary200_color;
   border-radius: 50px;
   font-size: 1.6em;
   padding: 8px 20px;
   margin: 0 auto;
   &:hover {
-    background-color: $secondary100_color;
-    color: $primary200_color;
+    background-color: $secondary200_color;
+    color: $fourth_color;
   }
 }
 

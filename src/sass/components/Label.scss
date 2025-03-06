@@ -1,19 +1,62 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> LABEL                               
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
 label {
+  @include montserrat;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 12px;
   color: $primary_color;
   padding-left: 2px;
-  font-size: 1.45em;
+  font-size: 20px;
   font-weight: 600;
   transition: font-size 300ms ease-out, gap 300ms ease-out, color 300ms ease-out;
-  @media screen and (max-width: 768px) {
-    font-size: 1.2em;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1920px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1920px) {
+  label {
+    gap: 0.625vw;
+    padding-left: 0.104vw;
+    font-size: 1.041vw;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1600px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1600px) {
+  label {
     gap: 10px;
-    color: $secondary100_color;
+    padding-left: 1.67px;
+    font-size: 16.66px;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  label {
+    gap: 1vw;
+    padding-left: 0.167vw;
+    font-size: 1.666vw;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 768px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  label {
+    gap: 10px;
+    padding-left: 1.3px;
+    font-size: 15px;
   }
 }

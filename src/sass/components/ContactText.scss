@@ -1,3 +1,6 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> CONTACT TEXT                               
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
@@ -8,37 +11,25 @@
   flex-direction: column;
   gap: 15px;
   padding: 30px 25px 0;
-  transition: padding 300ms ease-out, margin 300ms ease-out;
+  transition: padding 400ms ease-out, margin 400ms ease-out, gap 400ms ease-out;
   @media screen and (max-width: 768px) {
     padding: 0px;
     margin: 30px auto 0;
   }
 
   h1 {
-    color: $primary_color;
+    color: $fourth_color;
     font-size: 5em;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 70px;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.205);
     transition: font-size 300ms ease-out, margin-bottom 300ms ease-out;
-    @media screen and (max-width: 1240px) {
-      font-size: 4.25em;
-      margin-bottom: 25px;
-    }
-    @media screen and (max-width: 1024px) {
-      font-size: 3.12em;
-    }
-    @media screen and (max-width: 400px) {
-      font-size: 2.5em;
-    }
   }
   .text_top,
   .text_bottom {
     width: 100%;
-    max-width: 950px;
+    max-width: 1000px;
     margin: 0 auto 10px;
     color: $secondary100_color;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.498);
     font-size: 1.4em;
     font-weight: 400;
     transition: font-size 300ms ease-out;
@@ -49,7 +40,7 @@
   .text_bottom {
     margin: 0 auto 100px;
     padding-bottom: 30px;
-    border-bottom: 1px dashed $fourth_color;
+    border-bottom: 1px solid $fourth_color;
     transition: margin 300ms ease-out;
     @media screen and (max-width: 768px) {
       margin: 0 auto 25px;
@@ -58,19 +49,19 @@
   .text_question,
   .text_answer {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
-    color: $primary_color;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.205);
-    font-size: 1.8em;
-    font-weight: 700;
+    color: $secondary200_color;
+    font-size: 1.7em;
+    font-weight: 600;
+    letter-spacing: 1px;
     transition: font-size 300ms ease-out;
     @media screen and (max-width: 768px) {
       font-size: 1.6em;
     }
   }
   .text_answer {
-    border-bottom: 1px dashed $fourth_color;
+    border-bottom: 1px solid $fourth_color;
     padding-bottom: 20px;
     margin-bottom: 50px;
     transition: margin-bottom 300ms ease-out;
@@ -87,4 +78,154 @@
 .fade-out {
   opacity: 0;
   transition: opacity 0.5s ease-out;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1920px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1920px) {
+  .contact_text {
+    margin: 5.208vw auto 0;
+    gap: 0.781vw;
+    padding: 1.562vw 1.302vw 0;
+
+    h1 {
+      font-size: 4.166vw;
+      margin-bottom: 3.645vw;
+    }
+    .text_top,
+    .text_bottom {
+      max-width: 52.083vw;
+      margin: 0 auto 0.52vw;
+      font-size: 1.166vw;
+    }
+    .text_bottom {
+      margin: 0 auto 5.208vw;
+      padding-bottom: 1.562vw;
+      border-bottom: 0.052vw solid $fourth_color;
+    }
+    .text_question,
+    .text_answer {
+      max-width: 31.25vw;
+      font-size: 1.416vw;
+      letter-spacing: 0.052vw;
+    }
+    .text_answer {
+      border-bottom: 0.052vw solid $fourth_color;
+      padding-bottom: 1.041vw;
+      margin-bottom: 2.604vw;
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1600px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1600px) {
+  .contact_text {
+    margin: 83.33px auto 0;
+    gap: 12.5px;
+    padding: 25px 20.83px 0;
+
+    h1 {
+      font-size: 66.66px;
+      margin-bottom: 58.32px;
+    }
+    .text_top,
+    .text_bottom {
+      max-width: 833.33px;
+      margin: 0 auto 8.32px;
+      font-size: 18.66px;
+    }
+    .text_bottom {
+      margin: 0 auto 83.33px;
+      padding-bottom: 25px;
+      border-bottom: 0.832px solid $fourth_color;
+    }
+    .text_question,
+    .text_answer {
+      max-width: 500px;
+      font-size: 22.66px;
+      letter-spacing: 0.832px;
+    }
+    .text_answer {
+      border-bottom: 0.832px solid $fourth_color;
+      padding-bottom: 16.66px;
+      margin-bottom: 41.67px;
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .contact_text {
+    margin: 2.5vw auto 0;
+    gap: 1.2vw;
+    padding: 2vw 0.5vw 0;
+
+    h1 {
+      font-size: 6.566vw;
+      margin-bottom: 5.832vw;
+    }
+    .text_top,
+    .text_bottom {
+      max-width: 83.333vw;
+      margin: 0 auto 0.832vw;
+    }
+    .text_bottom {
+      margin: 0 auto 8.333vw;
+      padding-bottom: 2.5vw;
+      border-bottom: 0.083vw solid $fourth_color;
+    }
+    .text_question,
+    .text_answer {
+      max-width: 50vw;
+      font-size: 2.5vw;
+      letter-spacing: 0.083vw;
+    }
+    .text_answer {
+      border-bottom: 0.083vw solid $fourth_color;
+      padding-bottom: 1.666vw;
+      margin-bottom: 4.167vw;
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 768px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  .contact_text {
+    margin: 19.2px auto 0;
+    gap: 9.22px;
+    padding: 15.36px 0 0;
+
+    h1 {
+      font-size: 44px;
+      margin-bottom: 44.79px;
+    }
+    .text_top,
+    .text_bottom {
+      max-width: 640px;
+      margin: 0 auto 6.39px;
+    }
+    .text_bottom {
+      margin: 0 auto 64px;
+      padding-bottom: 19.2px;
+      border-bottom: 0.64px solid $fourth_color;
+    }
+    .text_question,
+    .text_answer {
+      max-width: 384px;
+      font-size: 19.2px;
+      letter-spacing: 0.64px;
+    }
+    .text_answer {
+      border-bottom: 0.64px solid $fourth_color;
+      padding-bottom: 12.8px;
+      margin-bottom: 32px;
+    }
+  }
 }

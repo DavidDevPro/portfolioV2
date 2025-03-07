@@ -65,7 +65,7 @@
   },
   {
     "id": "2",
-    "filterId": 1,
+    "filterId": 2,
     "pageId": "Office Notarial Le Soler",
     "title": "Le Soler",
     "cover": "./images/cover_soler.webp",
@@ -116,29 +116,27 @@
   {
     "id": "4",
     "filterId": 2,
-    "pageId": "ArgentBank",
-    "title": "ArgentBank",
-    "cover": "./images/argentbank_cover.webp",
+    "pageId": "Le château",
+    "title": "Le château",
+    "cover": "./images/cover_chateau.webp",
     "pictures": [
-      "https://portfolio.davidwebprojects.fr/images/argent_bank_1.webp",
-      "https://portfolio.davidwebprojects.fr/images/argent_bank_2.webp",
-      "https://portfolio.davidwebprojects.fr/images/argent_bank_3.webp",
-      "https://portfolio.davidwebprojects.fr/images/argent_bank_4.webp",
-      "https://portfolio.davidwebprojects.fr/images/argent_bank_5.webp",
-      "https://portfolio.davidwebprojects.fr/images/argent_bank_6.webp"
+      "https://portfolio.davidwebprojects.fr/images/chateau1.webp",
+      "https://portfolio.davidwebprojects.fr/images/chateau2.webp",
+      "https://portfolio.davidwebprojects.fr/images/chateau3.webp",
+      "https://portfolio.davidwebprojects.fr/images/chateau4.webp",
+      "https://portfolio.davidwebprojects.fr/images/chateau5.webp"
     ],
     "tags": [
-      "React",
-      "Sass",
-      "Redux Toolkit",
-      "Swagger"
+      "Photoshop",
+      "Intégration Web",
+      "C.S.S",
+      "P.H.P"
     ],
-    "aboutText1": "Dans ce projet, j'ai travaillé sur le développement front-end d'une application bancaire en utilisant React et Redux pour créer une expérience utilisateur dynamique et réactive. Ma mission principale a été d'intégrer le front-end avec le back-end via des appels API, en écrivant des appels à l'API REST pour assurer une communication fluide entre le client et le serveur.",
-    "aboutText2": "J'ai utilisé React pour développer l'interface utilisateur de l'application bancaire, en me concentrant sur la création d'un tableau de bord complet et réactif pour les utilisateurs. Redux a été utilisé pour gérer les données de l'application, assurant ainsi un état global cohérent à travers l'application.",
-    "aboutText3": " Pour définir les points d'accès de l'API et modéliser les interactions avec les données des transactions, j'ai utilisé Swagger, ce qui a facilité la documentation et la maintenabilité de l'interface de programmation.",
-    "aboutText4": "React, Redux et Swagger sont d'excellents choix pour développer un front-end moderne, surtout pour ceux travaillant sur des applications web complexes. Ces outils permettent d'assurer la clarté et la maintenabilité de l'interface de programmation, tout en garantissant le bon fonctionnement de l'application.",
-    "github": "https://github.com/david-backup/projet_11_ArgentBank",
-    "website": "https://david-backup.github.io/projet_11_ArgentBank/"
+    "aboutText1": "Dans le cadre de ce projet, j’ai été en charge de l’intégration web du site 'Le Château' à partir d’une maquette fournie au format PSD. Mon travail a débuté par une analyse détaillée du design sous Photoshop afin de bien cerner les choix graphiques et l’ergonomie souhaitée pour le site.",
+    "aboutText2": "Après cette phase d’analyse, j’ai procédé à l’intégration en respectant scrupuleusement la charte graphique. J’ai utilisé HTML pour structurer le contenu, CSS pour assurer le rendu visuel conforme aux attentes et PHP pour intégrer des fonctionnalités dynamiques. L’objectif était de garantir un site fluide, intuitif et en adéquation avec l’identité visuelle du projet.",
+    "aboutText3": "Cette mission a été réalisée en sous-traitance pour l’agence Paul & Ludo (https://www.paul-ludo.com/), reconnue pour son expertise en conception web et identité visuelle. Ce projet m’a permis de m’adapter à leur méthodologie et de veiller à ce que chaque détail soit en accord avec leurs standards de qualité.",
+    "aboutText4": "Tout au long de cette prestation, j’ai mis un point d’honneur à assurer une parfaite cohérence entre la maquette initiale et le rendu final. Ce projet a souligné l’importance d’une communication efficace et d’une exécution rigoureuse pour livrer un site respectant fidèlement les attentes du client.",
+    "website": "https://www.lechateau-d115.fr/"
   },
   {
     "id": "5",

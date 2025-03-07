@@ -1,18 +1,8 @@
-[
-  {
-    "id": 0,
-    "title": "Échangeons sur vos idées !",
-    "textTop": "Spécialiste en développement Web Front-End, je suis prêt à m'investir sur divers projets de conception de sites Internet, de création d'applications spécifiques ou d'interfaces web.",
-    "textBottom": "Vous avez un projet stimulant, je suis là pour concrétiser vos idées.",
-    "questionText": "Besoin de renseignements ?",
-    "answerText": "Renseignez-vous via le formulaire."
-  },
-  {
-    "id": 1,
-    "title": "Explorons vos ambitions !",
-    "textTop": "En tant que Développeur Web Front-End, je suis à votre disposition pour répondre à tout type de projets de création de sites web, de développement spécifique ou d'applications web.",
-    "textBottom": "Si vous avez un projet passionnant, je mets mes compétences au service de vos besoins.",
-    "questionText": "Besoin d'informations ?",
-    "answerText": "Remplissez le formulaire."
-  }
-]
+{
+  "id": 0,
+  "title": "Échangeons sur vos idées !",
+  "textTop": "Spécialiste en développement Web Front-End, je suis prêt à m'investir sur divers projets de conception de sites Internet, de création d'applications spécifiques ou d'interfaces web.",
+  "textBottom": "Vous avez un projet stimulant, je suis là pour concrétiser vos idées.",
+  "questionText": "Besoin de renseignements ?",
+  "answerText": "Remplissez le formulaire."
+}

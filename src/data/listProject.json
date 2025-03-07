@@ -1,7 +1,7 @@
 [
   {
     "id": "0",
-    "filterId": 2,
+    "filterId": 1,
     "pageId": "David Web Projects",
     "title": "David Web Projects",
     "cover": "./images/cover_davidwebprojects.webp",
@@ -28,10 +28,10 @@
       "Méthodologie Agile",
       "S.E.O"
     ],
-    "aboutText1": "David Web Projects est une entreprise spécialisée dans la conception et le développement de sites web sur mesure, alliant performance, design et stratégie digitale. Fondée par un expert en développement web, elle accompagne les entreprises et entrepreneurs dans la création de plateformes optimisées pour le référencement, la vitesse et l’expérience utilisateur. Grâce à une expertise approfondie en développement front-end et back-end, chaque projet est conçu avec une approche centrée sur l’efficacité et l’innovation.",
-    "aboutText2": "Le site davidwebprojects.fr est une vitrine technologique démontrant un savoir-faire avancé en développement web. Développé en Next.js pour des performances optimales et un rendu côté serveur (SSR), il est entièrement responsive et conçu avec Tailwind CSS, garantissant une interface fluide et moderne. L’utilisation de TypeScript renforce la robustesse du code, réduisant les erreurs et améliorant la maintenabilité. Côté backend, Laravel assure une gestion sécurisée et évolutive des données, garantissant un site rapide et fiable.",
-    "aboutText3": "L’architecture du site repose sur des bonnes pratiques de développement et d’optimisation SEO avancées. Le code est structuré pour assurer un temps de chargement minimal, grâce à une gestion efficace des assets et à l’optimisation des requêtes. L’hébergement est géré via serveur cloud infomaniak, offrant un contrôle total sur les performances et la sécurité. Des techniques de caching et de préchargement des ressources sont mises en place pour une navigation ultra-rapide et une expérience utilisateur sans friction.",
-    "aboutText4": "David Web Projects ne se limite pas à la création de sites web : l’entreprise propose également des services de refonte, d’optimisation et de maintenance, assurant la pérennité des projets digitaux de ses clients. Chaque collaboration est menée avec une approche agile, garantissant une écoute active et une adaptation aux besoins spécifiques. Que ce soit pour un projet e-commerce, un site vitrine ou une application web, David Web Projects transforme vos idées en solutions digitales performantes et impactantes.",
+    "aboutText1": "Je suis David, développeur web et fondateur de David Web Projects. J’accompagne les entreprises et entrepreneurs dans la création de sites web sur mesure, en alliant performance, design et stratégie digitale. Mon objectif est de concevoir des plateformes optimisées pour le référencement, la rapidité et l’expérience utilisateur, en proposant des solutions adaptées aux besoins spécifiques de chaque projet.",
+    "aboutText2": "Ce site est à la fois une vitrine de mon savoir-faire et un exemple concret des technologies que j’utilise au quotidien. Développé avec Next.js pour des performances optimales et un rendu serveur efficace (SSR), il repose sur une interface moderne conçue avec Tailwind CSS. L’intégration de TypeScript permet une meilleure structure du code et une maintenance facilitée. Côté backend, j’ai choisi Laravel pour gérer les données de manière sécurisée et évolutive, notamment pour le formulaire de contact.",
+    "aboutText3": "Chaque projet que je réalise suit les bonnes pratiques du développement web et du référencement. J’optimise le code et la gestion des ressources pour garantir un chargement rapide et une navigation fluide. L’hébergement sur un serveur cloud Infomaniak me permet d’assurer un bon niveau de performance et de sécurité. J’intègre également des solutions de caching et de préchargement pour améliorer encore davantage l’expérience utilisateur.",
+    "aboutText4": "En plus du développement web, je propose des services de refonte, d’optimisation et de maintenance pour assurer la pérennité des projets digitaux. J’interviens aussi en maintenance informatique, que ce soit pour l'OS ou le matériel, afin d’aider les entreprises à maintenir un environnement de travail performant et fiable. Chaque mission est réalisée avec une approche personnalisée, en fonction des besoins et des objectifs de mes clients.",
     "github": "https://github.com/DavidDevPro/david-front-freelance",
     "website": "https://davidwebprojects.fr/"
   },
@@ -65,7 +65,7 @@
   },
   {
     "id": "2",
-    "filterId": 2,
+    "filterId": 1,
     "pageId": "Office Notarial Le Soler",
     "title": "Le Soler",
     "cover": "./images/cover_soler.webp",
@@ -83,10 +83,10 @@
       "C.S.S",
       "P.H.P"
     ],
-    "aboutText1": "Dans le cadre de ce projet, j'ai été chargé de l'intégration web à partir d'une maquette fournie au format PSD. Ma première étape a consisté à analyser en profondeur cette maquette sous Photoshop afin de comprendre les spécificités du design et les attentes précises en termes d'interface utilisateur.",
-    "aboutText2": "Une fois cette analyse effectuée, j'ai procédé à l'intégration en traduisant fidèlement le design en code. Pour ce faire, j'ai utilisé les technologies suivantes : HTML pour structurer le contenu, CSS pour styliser les éléments conformément à la charte graphique, et PHP pour ajouter des fonctionnalités dynamiques au site. Cette combinaison de technologies a permis de créer un site web interactif et conforme aux standards actuels.",
-    "aboutText3": "Ce projet a été réalisé en tant que prestation de sous-traitance pour l'entreprise **Paul & Ludo** (https://www.paul-ludo.com/), une agence créative basée à Perpignan, spécialisée en conception web, identité visuelle, graphisme, médias sociaux, photographie et vidéo. Travailler avec Paul & Ludo m'a permis de m'immerger dans leur méthodologie spécifique, garantissant une intégration conforme à leurs attentes et aux besoins de leurs clients.",
-    "aboutText4": "En adoptant les méthodes de travail de Paul & Ludo, j'ai assuré une cohérence totale entre le design initial et le produit final. Cette collaboration a mis en évidence l'importance d'une communication fluide et d'une compréhension mutuelle des objectifs pour mener à bien des projets web de haute qualité.",
+    "aboutText1": "Dans ce projet, j’ai été chargé de l’intégration web à partir d’une maquette fournie au format PSD. La première étape a consisté à analyser cette maquette sous Photoshop afin de bien comprendre le design et les attentes en matière d’interface utilisateur.",
+    "aboutText2": "Une fois cette analyse réalisée, j’ai traduit le design en code en respectant fidèlement la charte graphique. Pour cela, j’ai utilisé HTML pour structurer le contenu, CSS pour le styliser et PHP pour ajouter des fonctionnalités dynamiques. Cette approche a permis de créer un site interactif et conforme aux standards du web.",
+    "aboutText3": "Ce projet a été réalisé dans le cadre d’une prestation de sous-traitance pour l’agence Paul & Ludo (https://www.paul-ludo.com/), spécialisée dans la conception web et l’identité visuelle. Cette collaboration m’a permis de m’adapter à leur méthodologie et de répondre aux exigences spécifiques du projet.",
+    "aboutText4": "Tout au long de cette mission, j’ai veillé à assurer une cohérence entre le design initial et l’intégration finale. Cette expérience a renforcé l’importance d’une bonne communication et d’une compréhension claire des objectifs pour mener à bien un projet web.",
     "website": "https://www.notaire-lesoler.fr/office/"
   },
   {
@@ -115,7 +115,7 @@
   },
   {
     "id": "4",
-    "filterId": 1,
+    "filterId": 2,
     "pageId": "ArgentBank",
     "title": "ArgentBank",
     "cover": "./images/argentbank_cover.webp",
@@ -159,10 +159,10 @@
       "Sass",
       "Laravel"
     ],
-    "aboutText1": "Dans ce projet, j'ai appliqué toutes les compétences acquises au cours de ma formation de développeur.",
-    "aboutText2": "Ce portfolio illustre de manière détaillée les compétences que j'ai acquises et maîtrisées ainsi que les projets que j'ai personnellement réalisés, offrant ainsi une vue d'ensemble de mon parcours professionnel.",
-    "aboutText3": "Il sert non seulement à me présenter de manière exhaustive, mais aussi à faciliter les opportunités de contact pour d'éventuelles collaborations ou offres d'emploi.",
-    "aboutText4": "Ce site a été entièrement développé en utilisant React pour la gestion de l'interface utilisateur dynamique et réactive, ainsi que Sass pour le stylisme CSS avancé, garantissant ainsi un design moderne, maintenable et esthétiquement plaisant.",
+    "aboutText1": "Ce portfolio est le reflet de mon parcours et de mon expertise en développement web. Chaque aspect a été pensé et conçu pour mettre en avant mes compétences techniques et ma capacité à créer des solutions digitales modernes et performantes.",
+    "aboutText2": "À travers ce site, je présente les projets que j’ai réalisés ainsi que les technologies que je maîtrise. Il illustre mon approche du développement web, alliant performance, design et optimisation pour répondre aux exigences du numérique.",
+    "aboutText3": "Au-delà d’une simple présentation, ce portfolio facilite la prise de contact pour d’éventuelles collaborations ou opportunités professionnelles. Son interface fluide et intuitive permet de naviguer facilement et de découvrir mon travail en toute simplicité.",
+    "aboutText4": "Côté technique, ce projet repose sur React pour une interface dynamique et réactive, et Sass pour un design structuré et maintenable. Le backend est développé avec Laravel, notamment pour la gestion du formulaire de contact, garantissant un traitement sécurisé et optimisé des données. L’ensemble a été conçu avec soin pour allier performance, clarté et efficacité.",
     "github": "https://github.com/david-backup/projet_12_portfolio_version_3",
     "website": "https://portfolio.davidwebprojects.fr/"
   }

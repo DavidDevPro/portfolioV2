@@ -1,3 +1,6 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> PROJECT TAGS                             
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
@@ -22,5 +25,41 @@
     font-weight: 500;
     width: 250px;
     padding: 8px 5px;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1300px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1300px) {
+  .tags {
+    max-width: 95.384vw;
+    gap: 1.923vw;
+
+    .tag_item {
+      border: 0.154vw solid $fourth_color;
+      border-radius: 0.769vw;
+      font-size: 1.415vw;
+      width: 19.231vw;
+      padding: 0.615vw 0.385vw;
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .tags {
+    max-width: 953.84px;
+    gap: 19.23px;
+
+    .tag_item {
+      border: 1.54px solid $fourth_color;
+      border-radius: 7.69px;
+      font-size: 14.15px;
+      width: 192.31px;
+      padding: 6.15px 3.85px;
+    }
   }
 }

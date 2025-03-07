@@ -1,3 +1,6 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> PROJECT SECTION TEXT                            
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
@@ -37,14 +40,95 @@
       font-size: 1.1em;
       line-height: 1.5em;
       transition: font-size 300ms ease-out, line-height 300ms ease-out;
+    }
+  }
+}
 
-      @media screen and (max-width: 768px) {
-        font-size: 1em;
-        line-height: 1.3em;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1300px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1300px) {
+  .one_project_section_about_project {
+    max-width: 95.384vw;
+    margin: 1.923vw auto 0;
+    padding: 1.923vw;
+    border: 0.154vw solid $fourth_color;
+    border-radius: 1.538vw;
+    gap: 2.308vw;
+    font-size: 1.415vw;
+
+    &_content {
+      gap: 1.538vw;
+
+      &_icon {
+        font-size: 2.154vw;
+        margin-top: 0.769vw;
       }
-      @media screen and (max-width: 400px) {
-        font-size: 0.9em;
-        line-height: 1.2em;
+
+      p {
+        padding: 0.769vw 0;
+        font-size: 1.557vw;
+        line-height: 2.35vw;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .one_project_section_about_project {
+    max-width: 953.84px;
+    margin: 19.23px auto 0;
+    padding: 19.23px;
+    border: 1.54px solid $fourth_color;
+    border-radius: 15.38px;
+    gap: 23.08px;
+    font-size: 14.15px;
+
+    &_content {
+      gap: 15.38px;
+
+      &_icon {
+        font-size: 21.54px;
+        margin-top: 7.69px;
+      }
+
+      p {
+        padding: 7.69px 0;
+        font-size: 15.57px;
+        line-height: 23.5px;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 500px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 500px) {
+  .one_project_section_about_project {
+    max-width: 953.84px;
+    margin: 19.23px auto 0;
+    padding: 1.846vw;
+    border: 1.54px solid $fourth_color;
+    border-radius: 15.38px;
+    gap: 23.08px;
+    font-size: 14.15px;
+
+    &_content {
+      gap: 3.076vw;
+
+      &_icon {
+        font-size: 4.308vw;
+        margin-top: 7.69px;
+      }
+
+      p {
+        padding: 7.69px 0;
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }

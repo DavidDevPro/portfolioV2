@@ -1,3 +1,6 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> CAROUSSEL                              
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
@@ -11,9 +14,7 @@
   border-radius: 25px;
   transition: height 300ms ease-out;
   animation: delayCaroussel 1000ms ease;
-  @media screen and (max-width: 768px) {
-    height: 380px;
-  }
+
   &::after {
     content: "";
     @include shadow_button;
@@ -46,9 +47,6 @@
     border-radius: 25px;
     z-index: 1;
     transition: height 300ms ease-out;
-    @media screen and (max-width: 768px) {
-      height: 380px;
-    }
   }
   .arrow {
     @include shadow_button;
@@ -66,9 +64,6 @@
     font-size: 60px;
     cursor: pointer;
     transition: font-size 300ms ease-out;
-    @media screen and (max-width: 768px) {
-      font-size: 46px;
-    }
   }
   .arrowLeft {
     left: 20px;
@@ -92,9 +87,6 @@
     opacity: 0.95;
     z-index: 3;
     transition: bottom 300ms ease-out;
-    @media screen and (max-width: 768px) {
-      bottom: 9%;
-    }
   }
   .slide_dots {
     position: absolute;
@@ -121,6 +113,125 @@
 
     .active {
       background-color: $primary_color;
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1300px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1300px) {
+  .caroussel {
+    max-width: 95.384vw;
+    height: 50vw;
+    margin: 3.846vw auto 0px;
+    border-radius: 1.923vw;
+    &::after {
+      max-width: 95.384vw;
+      height: 4.23vw;
+      border-radius: 0 0 1.923vw 1.923vw;
+    }
+
+    &_img {
+      max-width: 95.384vw;
+      height: 50vw;
+      border-radius: 1.923vw;
+    }
+    .arrow {
+      border: 0.153vw solid $fourth_color;
+      position: absolute;
+      padding: 0.538vw;
+      font-size: 4.615vw;
+    }
+    .arrowLeft {
+      left: 1.538vw;
+    }
+    .arrowRight {
+      right: 1.538vw;
+    }
+    .slide_indicator {
+      font-size: 1.353vw;
+      padding: 0.538vw 1.692vw;
+      border: 0.153vw solid $fourth_color;
+      border-radius: 1.923vw;
+    }
+    .slide_dots {
+      padding: 0px 1.923vw;
+      gap: 1.384vw;
+
+      .slide_dot {
+        width: 1.692vw;
+        height: 1.692vw;
+        border: 0.23vw solid $fourth_color;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .caroussel {
+    max-width: 953.84px;
+    height: 500px;
+    margin: 38.46px auto 0px;
+    border-radius: 19.23px;
+    &::after {
+      max-width: 953.84px;
+      height: 42.3px;
+      border-radius: 0 0 19.23px 19.23px;
+    }
+
+    &_img {
+      max-width: 953.84px;
+      height: 500px;
+      border-radius: 19.23px;
+    }
+    .arrow {
+      border: 1.53px solid $fourth_color;
+      position: absolute;
+      padding: 5.38px;
+      font-size: 46.15px;
+    }
+    .arrowLeft {
+      left: 15.38px;
+    }
+    .arrowRight {
+      right: 15.38px;
+    }
+    .slide_indicator {
+      font-size: 13.53px;
+      padding: 5.38px 16.92px;
+      border: 1.53px solid $fourth_color;
+      border-radius: 19.23px;
+    }
+    .slide_dots {
+      padding: 0px 19.23px;
+      gap: 13.84px;
+
+      .slide_dot {
+        width: 16.92px;
+        height: 16.92px;
+        border: 2.3px solid $fourth_color;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 500px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 500px) {
+  .caroussel {
+    .slide_dots {
+      gap: 2.768vw;
+
+      .slide_dot {
+        width: 3.384vw;
+        height: 3.384vw;
+        border: 0.46vw solid $fourth_color;
+      }
     }
   }
 }

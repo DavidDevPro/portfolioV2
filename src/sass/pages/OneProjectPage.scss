@@ -1,3 +1,6 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> ONE PROJECT PAGE                              
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
@@ -66,6 +69,79 @@
         100% {
           transform: translateY(-4px);
         }
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1300px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1300px) {
+  .one_project_section {
+    padding: 3.846vw 1.538vw;
+
+    h1,
+    h2 {
+      max-width: 95.384vw;
+    }
+    h1 {
+      font-size: 3.077vw;
+    }
+    h2 {
+      margin: 3.846vw auto 2.307vw;
+      font-size: 2.461vw;
+    }
+
+    &_tags {
+      margin: 1.538vw auto 3.846vw;
+      padding: 0px 1.923vw;
+    }
+    .scroll_button {
+      max-width: 5.384vw;
+      height: 5.384vw;
+      border: 0.154vw solid $fourth_color;
+      margin: 4.615vw auto 0;
+
+      &_icon {
+        font-size: 2.461vw;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .one_project_section {
+    padding: 38.46px 15.38px;
+
+    h1,
+    h2 {
+      max-width: 953.84px;
+    }
+    h1 {
+      font-size: 30.77px;
+    }
+    h2 {
+      margin: 60px auto 35px;
+      font-size: 24.61px;
+      transition: margin 350ms ease-out;
+    }
+
+    &_tags {
+      margin: 15.38px auto 38.46px;
+      padding: 0px 19.23px;
+    }
+    .scroll_button {
+      max-width: 53.84px;
+      height: 53.84px;
+      border: 1.54px solid $fourth_color;
+      margin: 46.15px auto 0;
+
+      &_icon {
+        font-size: 24.61px;
       }
     }
   }

@@ -1,3 +1,6 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> PROJECT SECTION LINKS                             
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
@@ -11,10 +14,6 @@
   justify-content: center;
   gap: 75px;
   transition: flex-direction 300ms ease-out, gap 300ms ease-out;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    gap: 15px;
-  }
 
   &_button {
     display: flex;
@@ -27,6 +26,62 @@
       animation: contactIcon 2s ease-in-out infinite;
       flex-shrink: 0;
       font-size: 28px;
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1300px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1300px) {
+  .one_project_section_link {
+    max-width: 95.384vw;
+    padding: 3.846vw 1.923vw 0;
+    gap: 5.769vw;
+
+    &_button {
+      gap: 0.769vw;
+
+      .project_icon {
+        font-size: 2.154vw;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .one_project_section_link {
+    max-width: 953.84px;
+    padding: 38.46px 19.23px 0;
+    gap: 57.69px;
+
+    &_button {
+      gap: 7.69px;
+
+      .project_icon {
+        font-size: 21.54px;
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 768px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  .one_project_section_link {
+    flex-direction: column;
+    gap: 5.511vw;
+
+    &_button {
+      gap: 1.5vw;
+
+      .project_icon {
+        font-size: 20px;
+      }
     }
   }
 }

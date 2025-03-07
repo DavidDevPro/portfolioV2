@@ -1,18 +1,19 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> MENTIONS PAGE                                
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
 .mentions {
   width: 100%;
   max-width: 1240px;
-  margin: 10px auto 0;
-  padding: 20px;
+  margin: 30px auto 0;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   transition: text-align 300ms ease-out;
-  @media screen and (max-width: 768px) {
-    text-align: left;
-  }
+
   h3 {
     color: $primary_color;
     font-size: 2em;
@@ -33,3 +34,23 @@
     }
   }
 }
+
+// /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  ===> 🖥️ MEDIA QUERY : Max-width 1600px
+//  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+// @media screen and (max-width: 1600px) {
+//   .mentions {
+//     max-width: 64.583vw;
+//     margin: 0.52vw auto 0;
+//     padding: 1.041vw;
+//     gap: 1.041vw;
+
+//     h3 {
+//       font-size: 1.666vw;
+//     }
+//     p {
+//       font-size: 1.041vw;
+//       max-width: 53.333vw;
+//     }
+//   }
+// }

@@ -1,3 +1,6 @@
+/*╔═════════════════════════════════════════════════════╗
+   🖥️ ==> PROJECT PAGE                                
+  ╚═════════════════════════════════════════════════════╝ */
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
@@ -8,6 +11,7 @@
   padding: 50px 20px;
   display: flex;
   flex-direction: column;
+  transition: padding 300ms ease-out;
 
   &_items {
     @include shadow_button;
@@ -18,12 +22,7 @@
     padding: 4px 4px 0px;
     transition: display 300ms ease-out, flex-direction 300ms ease-out,
       padding 300ms ease-out, border 300ms ease-out;
-    @media screen and (max-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-      border: 1px solid $primary_color;
-    }
+
     li {
       @include poppins;
       display: inline-block;
@@ -36,10 +35,6 @@
       cursor: pointer;
       overflow: hidden;
       transition: font-size 300ms ease-out, padding 300ms ease;
-      @media screen and (max-width: 768px) {
-        font-size: 1.05em;
-        padding: 9px 20px;
-      }
 
       &.active {
         background-color: $primary_color;
@@ -48,9 +43,6 @@
         border-radius: 25px;
         opacity: 0.96;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.55);
-        @media screen and (max-width: 768px) {
-          border: 2px solid $fourth_color;
-        }
       }
     }
   }
@@ -61,12 +53,6 @@
     gap: 30px;
     margin-top: 30px;
     transition: grid-template-columns repeat 300ms ease-out;
-    @media screen and (max-width: 1240px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media screen and (max-width: 768px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
 
     &_item {
       position: relative;
@@ -138,11 +124,188 @@
               width: 100%;
             }
           }
-          @media screen and (min-width: 768px) and (max-width: 1240px) {
-            font-size: 1.9em;
+        }
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1920px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1920px) {
+  .filter {
+    max-width: 83.333vw;
+    padding: 2.604vw 1.041vw;
+
+    &_items {
+      margin: 0 auto 1.041vw;
+      border-radius: 1.562vw;
+      border: 0.052vw dashed $fourth_color;
+      padding: 0.208vw 0.208vw 0px;
+
+      li {
+        font-size: 0.958vw;
+        padding: 0.572vw 1.197vw;
+
+        &.active {
+          border-radius: 1.302vw;
+          box-shadow: 0 0.052vw 0.052vw rgba(0, 0, 0, 0.55);
+        }
+      }
+    }
+    .cards {
+      gap: 1.562vw;
+      margin-top: 1.562vw;
+
+      &_item {
+        height: 20.833vw;
+        margin-bottom: 3.125vw;
+        border-radius: 1.041vw;
+        box-shadow: 0.052vw 0.26vw 0.26vw rgba(0, 0, 0, 0.35);
+
+        &_img-wrapper {
+          img {
+            max-width: 53.333vw;
+            height: 20.833vw;
+            border-radius: 1.041vw;
           }
-          @media screen and (max-width: 450px) {
-            font-size: 1.7em;
+        }
+        p {
+          padding: 0.26vw 0;
+          border-bottom: 0.052vw dashed $fourth_color;
+        }
+      }
+      .overlay {
+        border-radius: 1.041vw;
+
+        div {
+          p {
+            font-size: 2vw;
+            margin-bottom: 2.343vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1600px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1600px) {
+  .filter {
+    max-width: 1333.32px;
+    padding: 41.67px 16.66px;
+
+    &_items {
+      margin: 0 auto 16.66px;
+      border-radius: 25px;
+      border: 0.84px dashed $fourth_color;
+      padding: 3.33px 3.33px 0px;
+
+      li {
+        font-size: 15.33px;
+        padding: 9.15px 19.15px;
+
+        &.active {
+          border-radius: 20.83px;
+          box-shadow: 0 0.84px 0.84px rgba(0, 0, 0, 0.55);
+        }
+      }
+    }
+    .cards {
+      gap: 25px;
+      margin-top: 25px;
+
+      &_item {
+        height: 333.33px;
+        margin-bottom: 50px;
+        border-radius: 16.66px;
+        box-shadow: 0.84px 4.16px 4.16px rgba(0, 0, 0, 0.35);
+
+        &_img-wrapper {
+          img {
+            max-width: 853.33px;
+            height: 333.33px;
+            border-radius: 16.66px;
+          }
+        }
+        p {
+          padding: 4.16px 0;
+          border-bottom: 0.84px dashed $fourth_color;
+        }
+      }
+      .overlay {
+        border-radius: 16.66px;
+
+        div {
+          p {
+            font-size: 32px;
+            margin-bottom: 37.49px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1240px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1240px) {
+  .filter {
+    padding: 41.67px 60px;
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ===> 🖥️ MEDIA QUERY : Max-width 1000px
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1000px) {
+  .filter {
+    padding: 5.167vw 3vw;
+    &_items {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 15px;
+      padding: 2.5vw;
+      border: 0.84px solid $fourth_color;
+
+      li {
+        padding: 1.1vw 2.3vw;
+        &.active {
+          width: 100%;
+          border-radius: 5vw;
+          border: 0.054vw solid $fourth_color;
+          box-shadow: 0 2px 2px rgba(218, 216, 216, 0.45);
+          transition: transform 400ms cubic-bezier(0.25, 1, 0.5, 1);
+          will-change: transform;
+          &:hover {
+            transform: scale(1.02);
+          }
+        }
+      }
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5vw;
+      margin-top: 3vw;
+      transition: grid-template-columns repeat 300ms ease-out,
+        flex-direction 300ms ease;
+
+      .overlay {
+        div {
+          p {
+            font-size: 25px;
           }
         }
       }

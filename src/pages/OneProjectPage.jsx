@@ -34,7 +34,8 @@ const OneProjectPage = () => {
         </Link>
         <ScrollTo />
 
-        <h2>{`A propos de ${data.pageId}`}</h2>
+        <h2>{`À propos du projet "${data.pageId}"`}</h2>
+
         <ProjectSectionText
           aboutTexts={[
             data.aboutText1,
